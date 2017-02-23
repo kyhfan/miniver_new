@@ -14,7 +14,7 @@
         <!-- /input-group -->
       </li>
       <li>
-        <a href="#"><i class="fa fa-files-o fa-fw"></i> 쇼핑몰관리<span class="fa arrow"></span></a>
+        <a href="#"><i class="fa fa-files-o fa-fw"></i> 포트폴리오 관리<span class="fa arrow"></span></a>
         <ul class="nav nav-second-level">
           <li>
             <a href="shop_config.php">기본 설정</a>
