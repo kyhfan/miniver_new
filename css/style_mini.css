@@ -206,7 +206,8 @@ input[type="text"] {
     width: 0%;
     height: 100%;
     background: rgba(0,0,0,.9);
-    transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out 0.5s;
+    z-index: 1;
 }
 
 .layer-contact .inner {
@@ -214,7 +215,7 @@ input[type="text"] {
     margin: 0 auto;
     padding-top: 290px;
     opacity: 0;
-    transition: opacity 0.8s linear 1s;
+    transition: opacity 0.3s linear;
 }
 
 .layer-contact .inner .block-desc {
@@ -249,10 +250,17 @@ input[type="text"] {
 .contactOpen .layer-contact {
     width: 100%;
     z-index: 1005;
+    position: absolute;
+    left: 60px;
+    top: 0;
+    height: 100%;
+    background: rgba(0,0,0,.9);
+    transition: width 1s ease-in-out;
 }
 
 .contactOpen .layer-contact .inner {
     opacity: 1;
+    transition: opacity 1s linear 1s;
 }
 
 .layer-contact .inner > div {
