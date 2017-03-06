@@ -910,6 +910,14 @@ input[type="text"] {
     position: absolute;
     right: 7.5%;
     top: 0px;
+    width: 8%;
+    height: 55px;
+}
+
+.worklist .work-box .title-cate .wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
 }
 
 .worklist .work-box .title-cate .push-line {
@@ -922,15 +930,20 @@ input[type="text"] {
 }
 
 .worklist .work-box .title-cate span {
-    display: inline-block;
+    display: block;
     transform: rotate(90deg);
+    transform-origin: left;
     color: #959595;
     font-size: 10.5px;
     text-transform: uppercase;
     position: absolute;
-    right: -28px;
-    top: 85px;
+    left: 95%;
+    top: 60px;
+    /*width: 100px;*/
+    /*padding-left: 85px;*/
     font-weight: bold;
+    word-break: keep-all;
+    white-space: nowrap;
 }
 
 .worklist .work-box .wrap-els {
