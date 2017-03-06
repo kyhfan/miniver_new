@@ -15,7 +15,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.php">쇼핑몰 관리자</a>
+      <a class="navbar-brand" href="index.php">홈페이지 관리자</a>
     </div>
   <!-- /.navbar-header -->
 
@@ -32,7 +32,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-12">
-          <h1 class="page-header">상품 리스트</h1>
+          <h1 class="page-header">포트폴리오 리스트</h1>
         </div>
         <!-- /.col-lg-12 -->
       </div>
@@ -44,7 +44,7 @@
         <div class="panel-body">
           <!-- /.table-responsive -->
           <div class="table-responsive">
-            <table width="100%" class="table table-striped table-bordered table-hover" id="goods_list">
+            <table width="100%" class="table table-striped table-bordered table-hover" id="portfolio_list">
             </table>
           </div>
           <!-- /.table-responsive -->
@@ -69,13 +69,13 @@
 
 	<script src="../../lib/filer/js/jquery.filer.min.js"></script>
 	<script>
-	var goods_code = null;
+	//var goods_code = null;
 	$(document).ready(function() {
 		// 카테고리 리스트
-		show_goods_list("goods_list");
+		show_portfolio_list("portfolio_list");
 
 		// 테이블 api 세팅 
-		var table	= $('#goods_list').DataTable({
+		var table	= $('#portfolio_list').DataTable({
 			"columnDefs": [ {
 				"searchable": false,
 				"orderable": false,

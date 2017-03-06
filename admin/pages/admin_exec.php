@@ -68,6 +68,63 @@
 
 			echo $flag;
 		break;
+
+		case "show_portfolio_list" :
+			$target	= $_REQUEST['target'];
+			$list_query		= "SELECT * FROM ".$_gl['portfolio_info_table']." WHERE 1 ORDER BY idx DESC";
+			$list_result		= mysqli_query($my_db, $list_query);
+			$innerHTML	= "<thead>";
+			$innerHTML	.= "<tr>";
+			$innerHTML	.= "<th>템플릿</th>";
+			$innerHTML	.= "<th>웹사이트 이미지 사용여부</th>";
+			$innerHTML	.= "<th>프로젝트 업체명</th>";
+			$innerHTML	.= "<th>프로젝트 명</th>";
+			$innerHTML	.= "<th>프로젝트 카테고리</th>";
+			$innerHTML	.= "<th>프로젝트 클라이언트</th>";
+			$innerHTML	.= "<th>브랜드 이슈</th>";
+			$innerHTML	.= "<th>크리에이티브</th>";
+			$innerHTML	.= "<th>메인 이미지</th>";
+			$innerHTML	.= "<th>중간 이미지1</th>";
+			$innerHTML	.= "<th>중간 이미지2</th>";
+			$innerHTML	.= "<th>중간 이미지3</th>";
+			$innerHTML	.= "<th>웹 이미지1</th>";
+			$innerHTML	.= "<th>웹 이미지2</th>";
+			$innerHTML	.= "<th>웹 이미지3</th>";
+			$innerHTML	.= "<th>웹 이미지4</th>";
+			$innerHTML	.= "<th>웹 이미지5</th>";
+			$innerHTML	.= "<th>등록일</th>";
+			$innerHTML	.= "</tr>";
+			$innerHTML	.= "</thead>";
+			$innerHTML	.= "<tbody>";
+			//$i	= 1;
+			while ($list_data = mysqli_fetch_array($list_result))
+			{
+				$innerHTML	.= "<tr>";
+				$innerHTML	.= "<td>".$list_data['template_gubun']."</td>";
+				$innerHTML	.= "<td>".$list_data['webYN']."</td>";
+				$innerHTML	.= "<td>".$list_data['project_company_name']."</td>";
+				$innerHTML	.= "<td>".$list_data['project_name']."</td>";
+				$innerHTML	.= "<td>".$list_data['project_category']."</td>";
+				$innerHTML	.= "<td>".$list_data['project_client']."</td>";
+				$innerHTML	.= "<td>".$list_data['project_brand_issue']."</td>";
+				$innerHTML	.= "<td>".$list_data['project_client']."</td>";
+				$innerHTML	.= "<td><img src='".str_replace("../../../","../../",$list_data['main_image'])."' width='80px'></td>";
+				$innerHTML	.= "<td><img src='".str_replace("../../../","../../",$list_data['middle_image1'])."' width='80px'></td>";
+				$innerHTML	.= "<td><img src='".str_replace("../../../","../../",$list_data['middle_image2'])."' width='80px'></td>";
+				$innerHTML	.= "<td><img src='".str_replace("../../../","../../",$list_data['middle_image3'])."' width='80px'></td>";
+				$innerHTML	.= "<td><img src='".str_replace("../../../","../../",$list_data['web_image1'])."' width='80px'></td>";
+				$innerHTML	.= "<td><img src='".str_replace("../../../","../../",$list_data['web_image2'])."' width='80px'></td>";
+				$innerHTML	.= "<td><img src='".str_replace("../../../","../../",$list_data['web_image3'])."' width='80px'></td>";
+				$innerHTML	.= "<td><img src='".str_replace("../../../","../../",$list_data['web_image4'])."' width='80px'></td>";
+				$innerHTML	.= "<td><img src='".str_replace("../../../","../../",$list_data['web_image5'])."' width='80px'></td>";
+				$innerHTML	.= "<td>".$list_data['reg_date']."</td>";
+				$innerHTML	.= "</tr>";
+				//$i++;
+			}
+			$innerHTML	.= "</tbody>";
+			echo $innerHTML;
+		
+		break;
 	}
 
 ?>

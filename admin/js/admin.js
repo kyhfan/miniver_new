@@ -173,3 +173,21 @@ function img_submit(num, serial)
 		}
 	}); // end ajaxSubmit
 }
+
+// 전체 상품 리스트 생성
+function show_portfolio_list(id)
+{
+	$.ajax({
+		type   : "POST",
+		async  : false,
+		url    : "admin_exec.php",
+		data:{
+			"exec"		: "show_portfolio_list",
+			"target"	: id
+		},
+		success: function(response){
+			$("#"+id).html(response);
+		}
+	});
+}
+
