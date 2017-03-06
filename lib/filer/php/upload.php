@@ -1,27 +1,27 @@
 <?php
-	include_once $_SERVER['DOCUMENT_ROOT']."/config.php";
+	include_once $_SERVER['DOCUMENT_ROOT']."/miniver_new/config.php";
 	include('class.uploader.php');
 
     $uploader = new Uploader();
 	if ($_REQUEST['ig'] == "portfolio")
 	{
-		if (num == "1")
+		if ($_REQUEST['num'] == "1")
 			$image_culumn 	= "main_image";
-		else if (num == "2")
+		else if ($_REQUEST['num'] == "2")
 			$image_culumn 	= "middle_image1";
-		else if (num == "3")
+		else if ($_REQUEST['num'] == "3")
 			$image_culumn 	= "middle_image2";
-		else if (num == "4")
+		else if ($_REQUEST['num'] == "4")
 			$image_culumn 	= "middle_image3";
-		else if (num == "5")
+		else if ($_REQUEST['num'] == "5")
 			$image_culumn 	= "web_image1";
-		else if (num == "6")
+		else if ($_REQUEST['num'] == "6")
 			$image_culumn 	= "web_image2";
-		else if (num == "7")
+		else if ($_REQUEST['num'] == "7")
 			$image_culumn 	= "web_image3";
-		else if (num == "8")
+		else if ($_REQUEST['num'] == "8")
 			$image_culumn 	= "web_image4";
-		else if (num == "9")
+		else if ($_REQUEST['num'] == "9")
 			$image_culumn 	= "web_image5";
 		
 		$data = $uploader->upload($_FILES['files'], array(

@@ -84,7 +84,7 @@
                   <td>프로젝트 대표 이미지</td>
                   <td colspan="2">
                     <form action="../../lib/filer/php/upload.php" id="img_frm1" method="post" enctype="multipart/form-data">
-                      <input type="file" name="files[]" id="filer_input1" multiple="multiple">
+                      <input type="file" name="files[]" id="filer_input1" >
                       <!-- <input type="submit" value="Submit"> -->
                     </form>
                   </td>
@@ -93,7 +93,7 @@
                   <td>프로젝트 중간 이미지1</td>
                   <td colspan="2">
                     <form action="../../lib/filer/php/upload.php" id="img_frm2" method="post" enctype="multipart/form-data">
-                      <input type="file" name="files[]" id="filer_input2" multiple="multiple">
+                      <input type="file" name="files[]" id="filer_input2">
                       <!-- <input type="submit" value="Submit"> -->
                     </form>
                   </td>
@@ -102,7 +102,7 @@
                   <td>프로젝트 중간 이미지2</td>
                   <td colspan="2">
                     <form action="../../lib/filer/php/upload.php" id="img_frm3" method="post" enctype="multipart/form-data">
-                      <input type="file" name="files[]" id="filer_input3" multiple="multiple">
+                      <input type="file" name="files[]" id="filer_input3">
                       <!-- <input type="submit" value="Submit"> -->
                     </form>
                   </td>
@@ -111,7 +111,7 @@
                   <td>프로젝트 중간 이미지3</td>
                   <td colspan="2">
                     <form action="../../lib/filer/php/upload.php" id="img_frm4" method="post" enctype="multipart/form-data">
-                      <input type="file" name="files[]" id="filer_input4" multiple="multiple">
+                      <input type="file" name="files[]" id="filer_input4">
                       <!-- <input type="submit" value="Submit"> -->
                     </form>
                   </td>
@@ -120,7 +120,7 @@
                   <td>프로젝트 웹 이미지1</td>
                   <td colspan="2">
                     <form action="../../lib/filer/php/upload.php" id="img_frm5" method="post" enctype="multipart/form-data">
-                      <input type="file" name="files[]" id="filer_input5" multiple="multiple">
+                      <input type="file" name="files[]" id="filer_input5">
                       <!-- <input type="submit" value="Submit"> -->
                     </form>
                   </td>
@@ -129,7 +129,7 @@
                   <td>프로젝트 웹 이미지2</td>
                   <td colspan="2">
                     <form action="../../lib/filer/php/upload.php" id="img_frm6" method="post" enctype="multipart/form-data">
-                      <input type="file" name="files[]" id="filer_input6" multiple="multiple">
+                      <input type="file" name="files[]" id="filer_input6">
                       <!-- <input type="submit" value="Submit"> -->
                     </form>
                   </td>
@@ -138,7 +138,7 @@
                   <td>프로젝트 웹 이미지3</td>
                   <td colspan="2">
                     <form action="../../lib/filer/php/upload.php" id="img_frm7" method="post" enctype="multipart/form-data">
-                      <input type="file" name="files[]" id="filer_input7" multiple="multiple">
+                      <input type="file" name="files[]" id="filer_input7">
                       <!-- <input type="submit" value="Submit"> -->
                     </form>
                   </td>
@@ -147,7 +147,7 @@
                   <td>프로젝트 웹 이미지4</td>
                   <td colspan="2">
                     <form action="../../lib/filer/php/upload.php" id="img_frm8" method="post" enctype="multipart/form-data">
-                      <input type="file" name="files[]" id="filer_input8" multiple="multiple">
+                      <input type="file" name="files[]" id="filer_input8">
                       <!-- <input type="submit" value="Submit"> -->
                     </form>
                   </td>
@@ -156,7 +156,7 @@
                   <td>프로젝트 웹 이미지5</td>
                   <td colspan="2">
                     <form action="../../lib/filer/php/upload.php" id="img_frm9" method="post" enctype="multipart/form-data">
-                      <input type="file" name="files[]" id="filer_input9" multiple="multiple">
+                      <input type="file" name="files[]" id="filer_input9">
                       <!-- <input type="submit" value="Submit"> -->
                     </form>
                   </td>
@@ -268,7 +268,7 @@
           remove: '.jFiler-item-trash-action'
         }
       },
-      addMore: true
+      addMore: false
     });
   }
 	</script>

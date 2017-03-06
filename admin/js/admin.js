@@ -70,72 +70,54 @@ $(document).on("click", "#submit_btn", function(){
 	{
 		alert("프로젝트 대표 이미지를 선택해 주세요.");
 		return false;
-	}else{
-		img_submit(1, serial_code);
 	}
 
 	if (filer_input2 == "")
 	{
 		alert("프로젝트 중간 이미지를 선택해 주세요.");
 		return false;
-	}else{
-		img_submit(2, serial_code);
 	}
 
 	if (filer_input3 == "")
 	{
 		alert("프로젝트 중간 이미지를 선택해 주세요.");
 		return false;
-	}else{
-		img_submit(3, serial_code);
 	}
 
 	if (filer_input4 == "")
 	{
 		alert("프로젝트 중간 이미지를 선택해 주세요.");
 		return false;
-	}else{
-		img_submit(4, serial_code);
 	}
 
 	if (filer_input5 == "")
 	{
 		alert("프로젝트 웹 이미지를 선택해 주세요.");
 		return false;
-	}else{
-		img_submit(5, serial_code);
 	}
 
 	if (filer_input6 == "")
 	{
 		alert("프로젝트 웹 이미지를 선택해 주세요.");
 		return false;
-	}else{
-		img_submit(6, serial_code);
 	}
 
 	if (filer_input7 == "")
 	{
 		alert("프로젝트 웹 이미지를 선택해 주세요.");
 		return false;
-	}else{
-		img_submit(7, serial_code);
 	}
 
 	if (filer_input8 == "")
 	{
 		alert("프로젝트 웹 이미지를 선택해 주세요.");
 		return false;
-	}else{
-		img_submit(8, serial_code);
 	}
 
 	if (filer_input9 == "")
 	{
 		alert("프로젝트 웹 이미지를 선택해 주세요.");
 		return false;
-	}else{
-		img_submit(9, serial_code);
 	}
 
 	$.ajax({
@@ -155,14 +137,23 @@ $(document).on("click", "#submit_btn", function(){
 			"serial_code"			: serial_code
 		},
 		success: function(response){
-			console.log(response);
 			if (response == "N")
 			{
 				alert("다시 시도해 주세요.");
 				location.reload();
 			}else{
-				//alert("베스트 상품이 선택 되었습니다.");
-				img_submit();
+				img_submit(1, serial_code);
+				img_submit(2, serial_code);
+				img_submit(3, serial_code);
+				img_submit(4, serial_code);
+				img_submit(5, serial_code);
+				img_submit(6, serial_code);
+				img_submit(7, serial_code);
+				img_submit(8, serial_code);
+				img_submit(9, serial_code);
+
+				alert("포트폴리오가 등록 되었습니다!");
+				location.reload();
 			}
 		}
 	});

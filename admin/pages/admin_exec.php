@@ -58,7 +58,7 @@
 			$project_creative 		= $_REQUEST["project_creative"];
 			$serial_code 			= $_REQUEST["serial_code"];
 
-			$portfolio_query		= "INSERT INTO ".$_gl['portfolio_info_table']."(serial_code, template_gubun, webYN, project_company_name, project_name, project_category, project_client, project_brand_issue, project_creative) values('".$serial_code."',".$template_gubun."','".$webYN."','".$project_company_name."','".$project_name."','".$project_category."','".$project_client."','".$project_brand_issue."','".$project_creative."')";
+			$portfolio_query		= "INSERT INTO ".$_gl['portfolio_info_table']."(serial_code, template_gubun, webYN, project_company_name, project_name, project_category, project_client, project_brand_issue, project_creative, reg_date) values('".$serial_code."','".$template_gubun."','".$webYN."','".$project_company_name."','".$project_name."','".$project_category."','".$project_client."','".$project_brand_issue."','".$project_creative."','".date("Y-m-d H:i:s")."')";
 			$portfolio_result		= mysqli_query($my_db, $portfolio_query);
 
 			if ($portfolio_result)
