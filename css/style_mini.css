@@ -784,6 +784,7 @@ input[type="text"] {
     border-right: 1px solid #414141;
     border-bottom: 1px solid #414141;
     float: left;
+    position: relative;
 }
 
 .worklist .wrap-work .work-box:nth-child(4n+4) {
@@ -898,6 +899,158 @@ input[type="text"] {
 .worklist .category-box .txt-layout .cate:last-child {
     padding-bottom: 0;
 }
+
+.worklist .work-box > a > .inner {
+    width: 100%;
+    height: 100%;
+    transition: background .15s linear;
+}
+
+.worklist .work-box .title-cate {
+    position: absolute;
+    right: 20px;
+    top: 0px;
+}
+
+.worklist .work-box .title-cate .push-line {
+    width: 1px;
+    height: 55px;
+    background: #959595;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.worklist .work-box .title-cate span {
+    display: inline-block;
+    transform: rotate(90deg);
+    color: #959595;
+    font-size: 10.5px;
+    text-transform: uppercase;
+    position: absolute;
+    right: -28px;
+    top: 85px;
+    font-weight: bold;
+}
+
+.worklist .work-box .wrap-els {
+    width: 65%;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+}
+
+.worklist .work-box .wrap-els .circle-zone {
+    padding-top: 58px;
+    /*padding-top: 15%;*/
+}
+
+.worklist .work-box .wrap-els .circle-zone .circle-img {
+    position: relative;
+    z-index: 2;
+}
+
+.worklist .work-box .wrap-els img {
+    display: block;
+    max-width: 100%;
+}
+
+.worklist .work-box .wrap-els .circle-img:before,
+.worklist .work-box .wrap-els .circle-img:after {
+    content: "";
+    background: #77fde5;
+    z-index: -1;
+    width: 0%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: left;
+    transition: width .7s ease-in-out;
+}
+
+.worklist .work-box .wrap-els .circle-img:before {
+    transform: rotate(135deg);
+}
+
+.worklist .work-box .wrap-els .circle-img:after {
+    transform: rotate(-45deg);
+}
+
+.worklist .work-box a:hover .circle-img::before,
+.worklist .work-box a:hover .circle-img:after {
+    width: 65%;
+}
+
+.worklist .work-box .wrap-els .desc-zone {
+    position: absolute;
+    bottom: 0;
+    left: 23px;
+    height: 135px;
+}
+
+.worklist .work-box .wrap-els .desc-zone .project {
+    padding-bottom: 12px;
+}
+
+.worklist .work-box .wrap-els .desc-zone .guide {
+    padding-bottom: 7px;
+}
+
+
+.worklist .work-box .wrap-els .desc-zone .guide span {
+    color: #959595;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.worklist .work-box .wrap-els .desc-zone .name {
+
+}
+
+.worklist .work-box .wrap-els .desc-zone .name span {
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'Nanum Gothic';
+    text-transform: uppercase;
+}
+
+.worklist .work-box a:hover .inner {
+    background: #101e46;
+}
+
+.worklist .work-box > a > .inner > .push-line {
+    position: absolute;
+    bottom: 0;
+    left: 17.5%;
+    width: 1px;
+    /*height: 109px;*/
+    height: 129px;
+    /*height: 0px;*/
+    background: #959595;
+    transition: all .7s ease-in-out;
+}
+
+.worklist .work-box a:hover .inner > .push-line {
+    background: #77fde5;
+    height: 112px;
+}
+
+.worklist .work-box > a > .inner > .push-line:after {
+    position: absolute;
+    top: -18px;
+    left: -5px;
+    content: attr(data-no);
+    color: #959595;
+    font-size: 9.5px;
+    opacity: 0;
+    transition: opacity .3s linear .4s;
+}
+
+.worklist .work-box a:hover .inner > .push-line:after {
+    opacity: 1;
+}
+
 
 /* worklist */
 
