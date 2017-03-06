@@ -908,7 +908,7 @@ input[type="text"] {
 
 .worklist .work-box .title-cate {
     position: absolute;
-    right: 20px;
+    right: 7.5%;
     top: 0px;
 }
 
@@ -948,10 +948,11 @@ input[type="text"] {
 .worklist .work-box .wrap-els .circle-zone .circle-img {
     position: relative;
     z-index: 2;
+    text-align: center;
 }
 
 .worklist .work-box .wrap-els img {
-    display: block;
+    /*display: block;*/
     max-width: 100%;
 }
 
