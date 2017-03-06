@@ -17,16 +17,10 @@
         <a href="#"><i class="fa fa-files-o fa-fw"></i> 포트폴리오 관리<span class="fa arrow"></span></a>
         <ul class="nav nav-second-level">
           <li>
-            <a href="shop_config.php">기본 설정</a>
+            <a href="portfolio_list.php">포트폴리오 리스트</a>
           </li>
           <li>
-            <a href="category.php">카테고리 관리</a>
-          </li>
-          <li>
-            <a href="banner.php">배너 관리</a>
-          </li>
-          <li>
-            <a href="coupon.php">쿠폰 관리</a>
+            <a href="portfolio_ins.php">포트폴리오 등록</a>
           </li>
         </ul>
         <!-- /.nav-second-level -->

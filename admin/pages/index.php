@@ -14,7 +14,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">쇼핑몰 관리자</a>
+                <a class="navbar-brand" href="index.html">홈페이지 관리자</a>
             </div>
             <!-- /.navbar-header -->
 
