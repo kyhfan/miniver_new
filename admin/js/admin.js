@@ -174,7 +174,7 @@ function img_submit(num, serial)
 	}); // end ajaxSubmit
 }
 
-// 전체 상품 리스트 생성
+// 전체 포트폴리오 리스트 생성
 function show_portfolio_list(id)
 {
 	$.ajax({
@@ -183,6 +183,23 @@ function show_portfolio_list(id)
 		url    : "admin_exec.php",
 		data:{
 			"exec"		: "show_portfolio_list",
+			"target"	: id
+		},
+		success: function(response){
+			$("#"+id).html(response);
+		}
+	});
+}
+
+// 전체 contact 리스트 생성
+function show_contact_list(id)
+{
+	$.ajax({
+		type   : "POST",
+		async  : false,
+		url    : "admin_exec.php",
+		data:{
+			"exec"		: "show_contact_list",
 			"target"	: id
 		},
 		success: function(response){

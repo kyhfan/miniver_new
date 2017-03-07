@@ -125,6 +125,40 @@
 			echo $innerHTML;
 		
 		break;
+
+		case "show_contact_list" :
+			$target	= $_REQUEST['target'];
+			$list_query		= "SELECT * FROM ".$_gl['contact_info_table']." WHERE 1 ORDER BY idx DESC";
+			$list_result		= mysqli_query($my_db, $list_query);
+			$innerHTML	= "<thead>";
+			$innerHTML	.= "<tr>";
+			$innerHTML	.= "<th>브랜드/회사명</th>";
+			$innerHTML	.= "<th>담당자 이름</th>";
+			$innerHTML	.= "<th>담당자 연락처</th>";
+			$innerHTML	.= "<th>담당자 이메일</th>";
+			$innerHTML	.= "<th>의뢰 내용</th>";
+			$innerHTML	.= "<th>등록일자</th>";
+			$innerHTML	.= "</tr>";
+			$innerHTML	.= "</thead>";
+			$innerHTML	.= "<tbody>";
+			//$i	= 1;
+			while ($list_data = mysqli_fetch_array($list_result))
+			{
+				$innerHTML	.= "<tr>";
+				$innerHTML	.= "<td>".$list_data['company_name']."</td>";
+				$innerHTML	.= "<td>".$list_data['contact_name']."</td>";
+				$innerHTML	.= "<td>".$list_data['contact_phone']."</td>";
+				$innerHTML	.= "<td>".$list_data['contact_email']."</td>";
+				$innerHTML	.= "<td>".$list_data['contact_content']."</td>";
+				$innerHTML	.= "<td>".$list_data['reg_date']."</td>";
+				$innerHTML	.= "</tr>";
+				//$i++;
+			}
+			$innerHTML	.= "</tbody>";
+			echo $innerHTML;
+		
+		break;
+
 	}
 
 ?>
