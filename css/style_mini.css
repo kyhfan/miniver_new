@@ -1157,47 +1157,47 @@ input[type="text"] {
     padding-bottom: 164px;
 }
 
-.workdetail.descAndPhone .desc-block > div {
+.workdetail .desc-block > div {
     float: left;
 }
 
-.workdetail.descAndPhone .desc-block .papers {
+.workdetail .desc-block .papers {
     position: relative;
     width: 460px;
     height: 350px;
 }
 
-.workdetail.descAndPhone .desc-block .papers .paper {
+.workdetail .desc-block .papers .paper {
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
 }
 
-.workdetail.descAndPhone .desc-block .papers .paper._01 {
+.workdetail .desc-block .papers .paper._01 {
     z-index: 3;
     /*top: 0;*/
 }
-.workdetail.descAndPhone .desc-block .papers .paper._02 {
+.workdetail .desc-block .papers .paper._02 {
     z-index: 2;
     /*top: 45px;*/
 }
-.workdetail.descAndPhone .desc-block .papers .paper._03 {
+.workdetail .desc-block .papers .paper._03 {
     z-index: 1;
     /*top: 90px;*/
 }
 
-.workdetail.descAndPhone .desc-block .desc {
+.workdetail .desc-block .desc {
     width: 440px;
     /*border: 2px solid #bcbbbb;*/
     margin-left: 60px;
 }
 
-.workdetail.descAndPhone .desc-block .desc .category {
+.workdetail .desc-block .desc .category {
     border-top: 2px solid #bcbbbb;
 }
 
-.workdetail.descAndPhone .desc-block .desc .row {
+.workdetail .desc-block .desc .row {
     border-bottom: 1px solid #d3d3d3;
     padding: 15px 0;
 }
@@ -1209,20 +1209,20 @@ input[type="text"] {
     font-size: 15px;
 }
 
-.workdetail.descAndPhone .desc-block .desc .row .input {
+.workdetail .desc-block .desc .row .input {
     color: #686868;
     font-size: 14px;
 }
 
-.workdetail.descAndPhone .desc-block .desc .block {
+.workdetail .desc-block .desc .block {
     padding-top: 20px;
 }
 
-.workdetail.descAndPhone .desc-block .desc .block .title {
+.workdetail .desc-block .desc .block .title {
     padding-bottom: 5px;
 }
 
-.workdetail.descAndPhone .desc-block .desc .block .title span {
+.workdetail .desc-block .desc .block .title span {
     display: inline-block;
     background: #252525;
     color: #ffffff;
@@ -1231,11 +1231,11 @@ input[type="text"] {
     padding: 2px;
 }
 
-.workdetail.descAndPhone .desc-block .desc .block .sub {
+.workdetail .desc-block .desc .block .sub {
     padding-left: 2px;
 }
 
-.workdetail.descAndPhone .desc-block .desc .block .sub p {
+.workdetail .desc-block .desc .block .sub p {
     color: #686868;
     font-size: 14px;
     /*line-height: 22px;*/
@@ -1245,6 +1245,44 @@ input[type="text"] {
 .workdetail .spread-block {
     background: #252525;
     height: 350px;
+    position: relative;
+}
+
+.workdetail .spread-block .layout {
+    position: absolute;
+    top: -110px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.workdetail .spread-block .spread-pages {
+    text-align: center;
+}
+
+.workdetail .spread-block .spread-pages img {
+    margin-left: -18px;
+    vertical-align: middle;
+    z-index: 1;
+    position: relative;
+}
+
+.workdetail .spread-block .spread-pages img:first-child {
+    margin-left: 0;
+    z-index: 2 !important;
+}
+
+.workdetail.descAndPhone .spread-block .spread-pages img:nth-child(2) {
+    margin-left: -50px;
+}
+
+.workdetail.descAndTablet .spread-block .spread-pages img {
+    /*margin-left: -20px;*/
+    margin-left: 0;
+}
+
+.workdetail.descAndTablet .spread-block .spread-pages img:nth-child(2) {
+    margin-left: -33px;
 }
 
 
