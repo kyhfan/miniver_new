@@ -29,7 +29,7 @@
         <a href="#"><i class="fa fa-files-o fa-fw"></i> Contact 관리<span class="fa arrow"></span></a>
         <ul class="nav nav-second-level">
           <li>
-            <a href="contact_list.php">포트폴리오 등록</a>
+            <a href="contact_list.php">contact 리스트</a>
           </li>
         </ul>
         <!-- /.nav-second-level -->
