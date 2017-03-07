@@ -33,7 +33,7 @@
 	<div id="miniver">
 		<div id="header">
 			<div class="header-logo">
-				<a href="about.html">
+				<a href="about.php">
 					<img src="./images/header_logo.png" alt="MINIVERTISING">
 				</a>
 			</div>
