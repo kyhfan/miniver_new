@@ -1111,14 +1111,26 @@ input[type="text"] {
     top: 0;
     left: 50%;
     width: 1px;
-    height: 100%;
+    height: 0%;
     background: #ffffff;
+    transition: height 1s linear;
+}
+
+.work_detail .content-outer > .content-inner.workdetail .device-block .layout:after {
+    height: 100%;
 }
 
 .content-inner.workdetail .device-block .brand,
 .content-inner.workdetail .device-block .title {
     color: #ffffff;
     text-align: center;
+    opacity: 0;
+    transition: opacity 1s linear 1s;
+}
+
+.work_detail .content-inner.workdetail .device-block .brand,
+.work_detail .content-inner.workdetail .device-block .title {
+    opacity: 1;
 }
 
 .workdetail .device-block .brand {
@@ -1238,6 +1250,26 @@ input[type="text"] {
 
 /* workdetail */
 
+.animate {
+    /*visibility: hidden;*/
+    opacity: 0;
+}
+/*.fadeInUp {
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}*/
 
 /* module */
 /*clearfix*/
