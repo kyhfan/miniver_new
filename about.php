@@ -8,10 +8,12 @@
 	<link rel="stylesheet" href="./css/style_mini.css">
 	<link rel="stylesheet" href="./lib/bxslider/jquery.bxslider.css">
 	<link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link href='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.css' rel='stylesheet' />	
 	<script src="./js/jquery-1.11.2.min.js"></script>
 	<script src="./js/modernizr-custom.js"></script>
 	<script src="./lib/bxslider/jquery.bxslider.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+	<script src='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.js'></script>
 	<style>
 	.bx-wrapper .bx-viewport
 	{
@@ -55,74 +57,9 @@
 				</svg>
 			</div>
 		</div>
-		<div class="layer-contact">
-			<div class="inner clearfix">
-				<div class="block-desc">
-					<div class="top">
-						<div class="title">
-							<img src="./images/contact_us_title.png" alt="CONTACT US">
-						</div>
-						<div class="sub">
-							<p>
-								귀사의 브랜드로 좋은 캠페인을 만드는 일 만큼은<br>
-								결코 양보할 수 없는 미니버타이징의 가치입니다
-							</p>
-						</div>
-					</div>
-					<div class="bottom">
-						<div class="address">
-							<p>
-								<b>MINIVERTISING Corp.</b><br>
-								OFFICE.  2F 931-9, Bangbae-dong, Seocho-gu Seoul<br>
-								서울시 서초구 방배동 931-9, 2층<br>
-								TEL. 02 532 2475,   FAX. 02 532 2493<br>
-								FB.  www.facebook.com/minivertising
-							</p>
-							<div class="changeIcon">
-								<a href="javascript:void(0)">
-									<span class="map">MAP</span>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="block-send">
-					<div class="row">
-						<input type="text" placeholder="브랜드 / 회사명">
-					</div>
-					<div class="row">
-						<input type="text" placeholder="담당자 성함">
-					</div>
-					<div class="row">
-						<input type="text" placeholder="연락처">
-					</div>
-					<div class="row last">
-						<input type="text" placeholder="E-mail">
-					</div>
-					<div class="text-box">
-						<textarea name="name" rows="8" cols="80" placeholder="의뢰 내용"></textarea>
-					</div>
-					<div class="sendIcon">
-						<a href="javascript:void(0)">
-							<span>SEND</span>
-						</a>
-					</div>
-				</div>
-				<div class="block-map">
-					<div class="map">
-						<img src="./images/temp_map.png" alt="">
-					</div>
-					<div class="desc">
-						<p>
-							- 지하철 7호선 내방역 4번 출구 (도보 10분 소요)
-						</p>
-						<p>
-							- 2호선 방배역 3번 출구 (도보 12분 소요)
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
+<?
+	include_once "contact.php";
+?>		
 		<div id="nav">
 			<div class="wrap-btn">
 				<div class="hamburger">
