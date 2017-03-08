@@ -1,31 +1,6 @@
-<!DOCTYPE html>
-<html class="no-js">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="./css/normalize.css">
-	<link rel="stylesheet" href="./css/style_mini.css">
-	<link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css">
-	<script src="./js/jquery-1.11.2.min.js"></script>
-	<script src="./js/modernizr-custom.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
-</head>
-<body>
-	<div id="miniver">
-<!DOCTYPE html>
-<html class="no-js">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="./css/normalize.css">
-	<link rel="stylesheet" href="./css/style_mini.css">
-	<link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css">
-	<script src="./js/jquery-1.11.2.min.js"></script>
-	<script src="./js/modernizr-custom.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
-</head>
+<?
+	include_once "head.php";
+?>
 <body>
 	<div id="miniver">
 <?
@@ -34,7 +9,7 @@
 	// CONTACT US 팝업
 	include_once "contact.php";
 	// 상단 햄버그 메뉴
-	include_once "navi.php";
+	include_once "navi_w.php";
 ?>		
 		<div class="content-outer">
 			<div class="content-inner worklist">
