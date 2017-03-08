@@ -64,8 +64,6 @@ input[type="text"] {
     position: relative;
 }
 
-#background-gate .wrap-gate > .gate > .anim-elems > .title {}
-
 #background-gate .wrap-gate > .gate > .anim-elems > .rotate {
     position: absolute;
     top: 0;
@@ -102,7 +100,7 @@ input[type="text"] {
     height: 100%;
     background: #2c2d2d;
     z-index: 1001;
-    display: none; /* 페이지 이동 코딩 */
+    /*display: none;  페이지 이동 코딩 */
 }
 
 #header .header-logo {
@@ -323,9 +321,6 @@ input[type="text"] {
     padding-top: 20px;
 }
 
-.layer-contact .inner .block-desc .bottom .address {
-}
-
 .layer-contact .inner .block-desc .bottom .address p {
     line-height: 20px;
     color: #ffffff;
@@ -507,7 +502,7 @@ input[type="text"] {
     top: 30px;
     cursor: pointer;
     z-index: 1000;
-    display: none; /* 페이지 이동 코딩 */
+    /*display: none;  페이지 이동 코딩 */
 }
 
 #nav .hamburger {
@@ -523,10 +518,6 @@ input[type="text"] {
 .work_list #nav .wrap-btn .nav-line,
 .work_detail #nav .wrap-btn .nav-line {
     background: #ffffff !important;
-}
-
-#nav:hover .hamburger .nav-line {
-    /*background: #77fde5;*/
 }
 
 #nav .hamburger .nav-line {
@@ -677,11 +668,9 @@ input[type="text"] {
     padding-left: 60px;
     width: 100%;
     height: 100%;
-    visibility: hidden;
+    /*visibility: hidden;*/
 }
 
-.content-outer > .content-inner {
-}
 
 .content-outer > .content-inner.main {
     width: 100%;
@@ -720,10 +709,6 @@ input[type="text"] {
     bottom: 0;
     overflow: hidden;
     /*visibility: hidden;*/
-}
-
-.slider-background-wrapper .slider-background .slider-wrapper .slide.current {
-    /*visibility: visible;*/
 }
 
 .slider-background-wrapper .slider-background .slider-wrapper .slide._01 .wrap-inner {
@@ -1030,10 +1015,6 @@ input[type="text"] {
     color: #959595;
     font-size: 10px;
     text-transform: uppercase;
-}
-
-.worklist .work-box .wrap-els .desc-zone .name {
-
 }
 
 .worklist .work-box .wrap-els .desc-zone .name span {
