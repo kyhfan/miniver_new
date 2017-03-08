@@ -81,15 +81,6 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>프로젝트 커버 이미지</td>
-                  <td colspan="2">
-                    <form action="../../lib/filer/php/upload.php" id="img_frm10" method="post" enctype="multipart/form-data">
-                      <input type="file" name="files[]" id="filer_input10" >
-                      <!-- <input type="submit" value="Submit"> -->
-                    </form>
-                  </td>
-                </tr>
-                <tr>
                   <td>프로젝트 대표 이미지</td>
                   <td colspan="2">
                     <form action="../../lib/filer/php/upload.php" id="img_frm1" method="post" enctype="multipart/form-data">
@@ -221,7 +212,7 @@
 	$(document).ready(function() {
 	});
 
-  for (var i=1; i<=10; i++)
+  for (var i=1; i<=9; i++)
   {
     $('#filer_input'+i).filer({
       showThumbs: true,

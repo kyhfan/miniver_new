@@ -26,6 +26,18 @@
         <!-- /.nav-second-level -->
       </li>
       <li>
+        <a href="#"><i class="fa fa-files-o fa-fw"></i> NEWS 관리<span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level">
+          <li>
+            <a href="news_list.php">NEWS 리스트</a>
+          </li>
+          <li>
+            <a href="news_ins.php">NEWS 등록</a>
+          </li>
+        </ul>
+        <!-- /.nav-second-level -->
+      </li>
+      <li>
         <a href="#"><i class="fa fa-files-o fa-fw"></i> Contact 관리<span class="fa arrow"></span></a>
         <ul class="nav nav-second-level">
           <li>

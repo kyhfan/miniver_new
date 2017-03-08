@@ -17,7 +17,7 @@
 							<span class="about"></span>
 						</a>
 					</li>
-					<li <?=highlight_navi("work_list");?>>
+					<li <?=highlight_navi("work");?>>
 						<a href="javascript:void(0)" onclick="move_page('work_list.php');">
 							<span class="work"></span>
 						</a>

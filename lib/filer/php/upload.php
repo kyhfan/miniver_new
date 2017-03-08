@@ -23,6 +23,8 @@
 			$image_culumn 	= "web_image4";
 		else if ($_REQUEST['num'] == "9")
 			$image_culumn 	= "web_image5";
+		else if ($_REQUEST['num'] == "10")
+			$image_culumn 	= "cover_image";
 		
 		$data = $uploader->upload($_FILES['files'], array(
 			'limit' => 10, //Maximum Limit of files. {null, Number}

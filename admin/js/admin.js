@@ -120,6 +120,12 @@ $(document).on("click", "#submit_btn", function(){
 		return false;
 	}
 
+	if (filer_input10 == "")
+	{
+		alert("프로젝트 커버 이미지를 선택해 주세요.");
+		return false;
+	}
+
 	$.ajax({
 		type   : "POST",
 		async  : false,
@@ -151,6 +157,7 @@ $(document).on("click", "#submit_btn", function(){
 				img_submit(7, serial_code);
 				img_submit(8, serial_code);
 				img_submit(9, serial_code);
+				img_submit(10, serial_code);
 
 				alert("포트폴리오가 등록 되었습니다!");
 				location.reload();

@@ -1,6 +1,6 @@
 		<div id="header">
 			<div class="header-logo">
-				<a href="about.php">
+				<a href="javascript:void(0);" onclick="move_page('about.php');">
 					<img src="./images/header_logo.png" alt="MINIVERTISING">
 				</a>
 			</div>

@@ -100,7 +100,7 @@ input[type="text"] {
     height: 100%;
     background: #2c2d2d;
     z-index: 1001;
-    /*display: none;  페이지 이동 코딩 */
+    display: none;  /*페이지 이동 코딩 */
 }
 
 #header .header-logo {
@@ -502,7 +502,7 @@ input[type="text"] {
     top: 30px;
     cursor: pointer;
     z-index: 1000;
-    /*display: none;  페이지 이동 코딩 */
+    display: none; /* 페이지 이동 코딩 */
 }
 
 #nav .hamburger {
@@ -668,7 +668,7 @@ input[type="text"] {
     padding-left: 60px;
     width: 100%;
     height: 100%;
-    /*visibility: hidden;*/
+    visibility: hidden;
 }
 
 

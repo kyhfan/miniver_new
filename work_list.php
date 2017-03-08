@@ -54,19 +54,26 @@
 							</div>
 						</div>
 					</div>
+<?
+	$list_query		= "SELECT * FROM ".$_gl['portfolio_info_table']." WHERE 1";
+	$list_result	= mysqli_query($my_db, $list_query);
+	while ($list_data = mysqli_fetch_array($list_result))
+	{
+		$cover_image 	= str_replace("../../../","",$list_data['cover_image']);
+?>                    
 					<div class="work-box">
-						<a href="#">
+						<a href="javascript:void(0);" onclick="move_page('work_detail.php?idx=<?=$list_data['idx']?>');">
 							<div class="inner">
 								<div class="title-cate">
 									<div class="push-line"></div>
 									<span>
-										campaign
+										digital campaign
 									</span>
 								</div>
 								<div class="wrap-els">
 									<div class="circle-zone">
 										<div class="circle-img">
-											<img src="./images/work_ellipse1.png" alt="">
+											<img src="<?=$cover_image?>" alt="">
 										</div>
 										<!-- <div class="line rt"></div>
 										<div class="line rt"></div> -->
@@ -77,7 +84,7 @@
 												<span>project</span>
 											</div>
 											<div class="name">
-												<span>생명을 살리는 스티커</span>
+												<span><?=$list_data['project_name']?></span>
 											</div>
 										</div>
 										<div class="client">
@@ -85,7 +92,7 @@
 												<span>client</span>
 											</div>
 											<div class="name">
-												<span>minivertising</span>
+												<span><?=$list_data['project_client']?></span>
 											</div>
 										</div>
 									</div>
@@ -94,246 +101,9 @@
 							</div>
 						</a>
 					</div>
-					<div class="work-box">
-						<a href="#">
-							<div class="inner">
-								<div class="title-cate">
-									<div class="wrapper">
-										<div class="push-line"></div>
-										<span>viral movie</span>
-									</div>
-								</div>
-								<div class="wrap-els">
-									<div class="circle-zone">
-										<div class="circle-img">
-											<img src="./images/work_ellipse2.png" alt="">
-										</div>
-										<!-- <div class="line rt"></div>
-										<div class="line rt"></div> -->
-									</div>
-									<div class="desc-zone">
-										<div class="project">
-											<div class="guide">
-												<span>project</span>
-											</div>
-											<div class="name">
-												<span>어린이 재활병원</span>
-											</div>
-										</div>
-										<div class="client">
-											<div class="guide">
-												<span>client</span>
-											</div>
-											<div class="name">
-												<span>nexon</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="push-line" data-no="02"></div>
-							</div>
-						</a>
-					</div>
-					<div class="work-box">
-						<a href="#">
-							<div class="inner">
-								<div class="title-cate">
-									<div class="wrapper">
-										<div class="push-line"></div>
-										<span>campaign</span>
-									</div>
-								</div>
-								<div class="wrap-els">
-									<div class="circle-zone">
-										<div class="circle-img">
-											<img src="./images/work_ellipse3.png" alt="">
-										</div>
-										<!-- <div class="line rt"></div>
-										<div class="line rt"></div> -->
-									</div>
-									<div class="desc-zone">
-										<div class="project">
-											<div class="guide">
-												<span>project</span>
-											</div>
-											<div class="name">
-												<span>예뻐지는 가방</span>
-											</div>
-										</div>
-										<div class="client">
-											<div class="guide">
-												<span>client</span>
-											</div>
-											<div class="name">
-												<span>the faceshop</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="push-line" data-no="03"></div>
-							</div>
-						</a>
-					</div>
-					<div class="work-box">
-						<a href="#">
-							<div class="inner">
-								<div class="title-cate">
-									<div class="wrapper">
-										<div class="push-line"></div>
-										<span>campaign</span>
-									</div>
-								</div>
-								<div class="wrap-els">
-									<div class="circle-zone">
-										<div class="circle-img">
-											<img src="./images/work_ellipse1.png" alt="">
-										</div>
-										<!-- <div class="line rt"></div>
-										<div class="line rt"></div> -->
-									</div>
-									<div class="desc-zone">
-										<div class="project">
-											<div class="guide">
-												<span>project</span>
-											</div>
-											<div class="name">
-												<span>생명을 살리는 스티커</span>
-											</div>
-										</div>
-										<div class="client">
-											<div class="guide">
-												<span>client</span>
-											</div>
-											<div class="name">
-												<span>minivertising</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="push-line" data-no="04"></div>
-							</div>
-						</a>
-					</div>
-					<div class="work-box">
-						<a href="#">
-							<div class="inner">
-								<div class="title-cate">
-									<div class="wrapper">
-										<div class="push-line"></div>
-										<span>viral movie</span>
-									</div>
-								</div>
-								<div class="wrap-els">
-									<div class="circle-zone">
-										<div class="circle-img">
-											<img src="./images/work_ellipse2.png" alt="">
-										</div>
-										<!-- <div class="line rt"></div>
-										<div class="line rt"></div> -->
-									</div>
-									<div class="desc-zone">
-										<div class="project">
-											<div class="guide">
-												<span>project</span>
-											</div>
-											<div class="name">
-												<span>어린이 재활병원</span>
-											</div>
-										</div>
-										<div class="client">
-											<div class="guide">
-												<span>client</span>
-											</div>
-											<div class="name">
-												<span>nexon</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="push-line" data-no="05"></div>
-							</div>
-						</a>
-					</div>
-					<div class="work-box">
-						<a href="#">
-							<div class="inner">
-								<div class="title-cate">
-									<div class="wrapper">
-										<div class="push-line"></div>
-										<span>campaign</span>
-									</div>
-								</div>
-								<div class="wrap-els">
-									<div class="circle-zone">
-										<div class="circle-img">
-											<img src="./images/work_ellipse3.png" alt="">
-										</div>
-										<!-- <div class="line rt"></div>
-										<div class="line rt"></div> -->
-									</div>
-									<div class="desc-zone">
-										<div class="project">
-											<div class="guide">
-												<span>project</span>
-											</div>
-											<div class="name">
-												<span>예뻐지는 가방</span>
-											</div>
-										</div>
-										<div class="client">
-											<div class="guide">
-												<span>client</span>
-											</div>
-											<div class="name">
-												<span>the faceshop</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="push-line" data-no="06"></div>
-							</div>
-						</a>
-					</div>
-					<div class="work-box">
-						<a href="#">
-							<div class="inner">
-								<div class="title-cate">
-									<div class="wrapper">
-										<div class="push-line"></div>
-										<span>campaign</span>
-									</div>
-								</div>
-								<div class="wrap-els">
-									<div class="circle-zone">
-										<div class="circle-img">
-											<img src="./images/work_ellipse1.png" alt="">
-										</div>
-										<!-- <div class="line rt"></div>
-										<div class="line rt"></div> -->
-									</div>
-									<div class="desc-zone">
-										<div class="project">
-											<div class="guide">
-												<span>project</span>
-											</div>
-											<div class="name">
-												<span>생명을 살리는 스티커</span>
-											</div>
-										</div>
-										<div class="client">
-											<div class="guide">
-												<span>client</span>
-											</div>
-											<div class="name">
-												<span>minivertising</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="push-line" data-no="07"></div>
-							</div>
-						</a>
-					</div>
+<?
+	}
+?>					
 				</div>
 			</div>
 		</div>
@@ -357,11 +127,8 @@
 
 		$("#header").fadeIn(600, function(){
 			$("#nav").fadeIn(600, function(){
-				//$(".content-outer").fadeIn(300);
-				//TweenMax.staggerFrom('.content-outer', .5, {opacity: 1}, 0.1);
 				$(".content-outer").css("visibility","visible");
 				 TweenMax.from( $('.content-outer'), 0.5, {css:{opacity:0}});
-				//TweenMax.staggerFrom("li", .5, {top:100, opacity:0, delay:1, ease:Back.easeOut}, 0.1);
 			});
 		});
         

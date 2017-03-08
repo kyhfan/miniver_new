@@ -24,4 +24,17 @@ function highlight_navi($pg)
 
 	return $flag;	
 }
+
+function select_portfolio_info($idx)
+{
+	global $_gl;
+	global $my_db;
+
+	$query		= "SELECT * FROM ".$_gl['portfolio_info_table']." WHERE idx='".$idx."'";
+	$result		= mysqli_query($my_db, $query);
+	$data		= mysqli_fetch_array($result);
+
+	return $data;
+	
+}
 ?>
