@@ -83,7 +83,7 @@ input[type="text"] {
 
 #background-gate .wrap-gate .loading-bar > .fill {
     background-color: #ffffff;
-    width: 50%;
+    width: 0%;
     height: 2px;
 }
 /* gate */
@@ -100,7 +100,7 @@ input[type="text"] {
     height: 100%;
     background: #2c2d2d;
     z-index: 1001;
-    display: none;  /*페이지 이동 코딩 */
+    /*display: none; 페이지 이동 코딩 */
 }
 
 #header .header-logo {
@@ -668,7 +668,7 @@ input[type="text"] {
     padding-left: 60px;
     width: 100%;
     height: 100%;
-    visibility: hidden;
+    /*visibility: hidden;*/
 }
 
 
@@ -1160,16 +1160,17 @@ input[type="text"] {
 }
 
 .workdetail .desc-block .papers .paper._01 {
+    /*top: 10px;*/
     z-index: 3;
     /*top: 0;*/
 }
 .workdetail .desc-block .papers .paper._02 {
     z-index: 2;
-    /*top: 45px;*/
+    /*top: 20px;*/
 }
 .workdetail .desc-block .papers .paper._03 {
     z-index: 1;
-    /*top: 90px;*/
+    /*top: 30px;*/
 }
 
 .workdetail .desc-block .desc {
