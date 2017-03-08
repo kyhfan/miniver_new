@@ -13,7 +13,7 @@
 			<div class="wrap-menu">
 				<ul class="clearfix">
 					<li class="active"><a href="javascript:void(0)"><img src="./images/navi_01.png" alt="about"></a></li>
-					<li><a href="javascript:void(0);" onclick="move_page('work.html');"><img src="./images/navi_02.png" alt="work"></a></li>
+					<li><a href="javascript:void(0);" onclick="move_page('work_list.php');"><img src="./images/navi_02.png" alt="work"></a></li>
 					<li><a href="javascript:void(0);" onclick="move_page('news.html');"><img src="./images/navi_03.png" alt="news"></a></li>
 				</ul>
 			</div>

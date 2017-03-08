@@ -13,135 +13,29 @@
 </head>
 <body>
 	<div id="miniver">
-		<div id="header">
-			<div class="header-logo">
-				<a href="about.html">
-					<img src="./images/header_logo.png" alt="MINIVERTISING">
-				</a>
-			</div>
-			<div class="contact-us">
-				<a href="contactUs">
-					<img src="./images/contact_us.png" alt="CONTACT US">
-					<!-- <i class="fa fa-angle-right first" aria-hidden="true"></i> -->
-					<!-- <i class="fa fa-angle-right second" aria-hidden="true"></i> -->
-				</a>
-			</div>
-			<div class="sns-elems">
-				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 15 15" class="fb-svg">
-					<path d="M4.7,0v1.7H3.6c-0.3,0-0.5,0.2-0.5,0.5v1h1.6L4.5,5H3.1v5H1V5.1H0V3.2h0.9V2c0-1.1,0.7-2,2-2H4.7z" fill="#ffffff">
-				</svg>
-				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="26" height="20" viewBox="0 0 16 16" class="blog-svg">
-					<path d="M5.1,3.8c0.8-0.4,1.2-1,1.2-1.8c0-0.2,0-0.5-0.1-0.7C6.1,1.1,6,0.9,5.8,0.8C5.7,0.6,5.5,0.5,5.3,0.3
-						C5.1,0.2,4.8,0.1,4.6,0.1S4,0,3.6,0H1C0.6,0,0.4,0.1,0.2,0.2C0.1,0.4,0,0.6,0,1v6c0,0.3,0.1,0.6,0.2,0.8C0.4,7.9,0.6,8,1,8h2.4
-						c0.4,0,0.8,0,1.1-0.1c0.3,0,0.6-0.1,0.8-0.2c0.4-0.2,0.7-0.4,0.9-0.8c0.2-0.4,0.3-0.8,0.3-1.2C6.6,4.8,6.1,4.1,5.1,3.8z M1.6,1.2
-						h1.3c0.6,0,1,0.1,1.3,0.2c0.3,0.1,0.4,0.4,0.4,0.8c0,0.2,0,0.4-0.1,0.5C4.4,2.9,4.3,3.1,4,3.2C3.8,3.2,3.5,3.3,3.1,3.3H1.6V1.2z
-						M3.4,6.8H1.6V4.4h1.7c0.6,0,1,0.1,1.3,0.3C4.9,4.9,5,5.2,5,5.6C5,6.4,4.5,6.8,3.4,6.8z" fill="#ffffff">
-				</svg>
-			</div>
-		</div>
-		<div class="layer-contact">
-			<div class="inner clearfix">
-				<div class="block-desc">
-					<div class="top">
-						<div class="title">
-							<img src="./images/contact_us_title.png" alt="CONTACT US">
-						</div>
-						<div class="sub">
-							<p>
-								귀사의 브랜드로 좋은 캠페인을 만드는 일 만큼은<br>
-								결코 양보할 수 없는 미니버타이징의 가치입니다
-							</p>
-						</div>
-					</div>
-					<div class="bottom">
-						<div class="address">
-							<p>
-								<b>MINIVERTISING Corp.</b><br>
-								OFFICE.  2F 931-9, Bangbae-dong, Seocho-gu Seoul<br>
-								서울시 서초구 방배동 931-9, 2층<br>
-								TEL. 02 532 2475,   FAX. 02 532 2493<br>
-								FB.  www.facebook.com/minivertising
-							</p>
-							<div class="changeIcon">
-								<a href="javascript:void(0)">
-									<span class="map">MAP</span>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="block-send">
-					<div class="row">
-						<input type="text" placeholder="브랜드 / 회사명">
-					</div>
-					<div class="row">
-						<input type="text" placeholder="담당자 성함">
-					</div>
-					<div class="row">
-						<input type="text" placeholder="연락처">
-					</div>
-					<div class="row last">
-						<input type="text" placeholder="E-mail">
-					</div>
-					<div class="text-box">
-						<textarea name="name" rows="8" cols="80" placeholder="의뢰 내용"></textarea>
-					</div>
-					<div class="sendIcon">
-						<a href="javascript:void(0)">
-							<span>SEND</span>
-						</a>
-					</div>
-				</div>
-				<div class="block-map">
-					<div class="map">
-						<img src="./images/temp_map.png" alt="">
-					</div>
-					<div class="desc">
-						<p>
-							- 지하철 7호선 내방역 4번 출구 (도보 10분 소요)
-						</p>
-						<p>
-							- 2호선 방배역 3번 출구 (도보 12분 소요)
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="nav">
-			<div class="wrap-btn">
-				<div class="hamburger">
-					<div class="nav-line"></div>
-					<div class="nav-line"></div>
-					<div class="nav-line"></div>
-				</div>
-				<div class="cross">
-					<div class="nav-line"></div>
-					<div class="nav-line"></div>
-				</div>
-			</div>
-			<div class="wrap-menu">
-				<ul class="clearfix">
-					<li class="active">
-						<a href="javascript:void(0)">
-							<!-- <img src="./images/navi_01.png" alt="about"> -->
-							<span class="about"></span>
-						</a>
-					</li>
-					<li>
-						<a href="javascript:void(0)">
-							<!-- <img src="./images/navi_02.png" alt="work"> -->
-							<span class="work"></span>
-						</a>
-					</li>
-					<li>
-						<a href="javascript:void(0)">
-							<!-- <img src="./images/navi_03.png" alt="news"> -->
-							<span class="news"></span>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/style_mini.css">
+	<link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css">
+	<script src="./js/jquery-1.11.2.min.js"></script>
+	<script src="./js/modernizr-custom.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+</head>
+<body>
+	<div id="miniver">
+<?
+	// 사이드 헤더 메뉴
+	include_once "header.php";
+	// CONTACT US 팝업
+	include_once "contact.php";
+	// 상단 햄버그 메뉴
+	include_once "navi.php";
+?>		
 		<div class="content-outer">
 			<div class="content-inner worklist">
 				<div class="wrap-work">
@@ -473,6 +367,7 @@
 	var $body = $('body');
 	var menuBtn = $('#nav');
 
+
 	$(window).load(function() {
 		// var path = location.pathname;
 		// var pathName = path.split("/");
@@ -484,6 +379,17 @@
 		TweenMax.to('.txt-layout', 2, {opacity: 1});
 		$('.category-box .bl').bind('transitionend', function() {
 		});
+
+		$("#header").fadeIn(600, function(){
+			$("#nav").fadeIn(600, function(){
+				//$(".content-outer").fadeIn(300);
+				//TweenMax.staggerFrom('.content-outer', .5, {opacity: 1}, 0.1);
+				$(".content-outer").css("visibility","visible");
+				 TweenMax.from( $('.content-outer'), 0.5, {css:{opacity:0}});
+				//TweenMax.staggerFrom("li", .5, {top:100, opacity:0, delay:1, ease:Back.easeOut}, 0.1);
+			});
+		});
+        
 	});
 
 	$('.contact-us > a').on('click', function(e) {

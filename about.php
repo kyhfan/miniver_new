@@ -105,8 +105,8 @@
 			pager: false
 		});
 
-		$("#header").fadeIn(300, function(){
-			$("#nav").fadeIn(300, function(){
+		$("#header").fadeIn(600, function(){
+			$("#nav").fadeIn(600, function(){
 				//$(".content-outer").fadeIn(300);
 				//TweenMax.staggerFrom('.content-outer', .5, {opacity: 1}, 0.1);
 				$(".content-outer").css("visibility","visible");

@@ -814,6 +814,8 @@ input[type="text"] {
     height: 1px;
     background: #77fde5;
     transition: width 1s linear;
+    -webkit-transition-delay: 1s; /* Safari */
+    transition-delay: 1s;
 }
 
 .work_list .category-box .line {
@@ -875,7 +877,7 @@ input[type="text"] {
     vertical-align: middle;
     text-align: center;
     font-family: Arial;
-    opacity: 0;
+    /*opacity: 0;*/
 }
 
 .worklist .category-box .txt-layout .title {
