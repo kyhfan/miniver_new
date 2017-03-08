@@ -1146,6 +1146,11 @@ input[type="text"] {
     padding-top: 38px;
 }
 
+.workdetail.video .device-block .video-frame {
+    width: 800px;
+    margin: 0 auto;
+}
+
 .workdetail .device-block .mock-up .img {
     text-align: center;
 }
@@ -1193,7 +1198,12 @@ input[type="text"] {
     margin-left: 60px;
 }
 
-.workdetail .desc-block .desc .category {
+.workdetail.video .desc-block .desc {
+    width: 100%;
+    margin-left: 0;
+}
+
+.workdetail .desc-block .desc > .category {
     border-top: 2px solid #bcbbbb;
 }
 
@@ -1202,11 +1212,46 @@ input[type="text"] {
     padding: 15px 0;
 }
 
+.workdetail.video .desc-block .desc .row {
+    position: relative;
+    border-top: 2px solid #bcbbbb;
+}
+
+.workdetail.video .desc-block .desc .row > .category {
+    width: 50%;
+    float: left;
+}
+
+.workdetail.video .desc-block .desc .row > .category:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 16px;
+    width: 1px;
+    height: 16px;
+    background: #d3d3d3;
+}
+
+.workdetail.video .desc-block .desc .row > .client {
+    width: 50%;
+    float: left;
+    padding-left: 39px;
+}
+
+.workdetail.video .desc-block .desc .capture-block {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.workdetail.video .desc-block .desc .capture-block img {
+    width: 100%;
+}
+
 .workdetail .desc-block .desc .row .guide {
     font-weight: bold;
-    /*font-family: Arial;*/
+    font-family: Arial;
     color: #434343;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .workdetail .desc-block .desc .row .input {
