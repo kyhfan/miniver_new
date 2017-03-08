@@ -1383,6 +1383,169 @@ input[type="text"] {
 
 /* workdetail */
 
+
+
+/* news */
+
+.content-outer > .content-inner.news {
+    width: 100%;
+    height: 100%;
+    /*padding-bottom: 150px;*/
+    overflow-y: auto;
+}
+
+.content-outer > .content-inner.news .wrap-news {
+    width: 960px;
+    margin: 0 auto;
+    padding: 128px 0 154px;
+}
+
+.content-outer > .content-inner.news .wrap-news > .title {
+    padding-bottom: 20px;
+}
+
+.content-outer > .content-inner.news .wrap-news .list {
+    border-top: 2px solid #4e4e4e;
+    border-bottom: 2px solid #4e4e4e;
+}
+
+.content-outer > .content-inner.news .wrap-news .list .row {
+    border-top: 1px solid #d7d7d7;
+    /*border-bottom: 1px solid #d7d7d7;*/
+    padding: 20px 0;
+}
+
+.content-outer > .content-inner.news .wrap-news .list .row:first-child {
+    border-top: 0;
+}
+
+.content-outer > .content-inner.news .wrap-news .list .row {
+    border-top: 1px solid #d7d7d7;
+}
+
+.content-outer > .content-inner.news .wrap-news .list .row:last-child {
+    /*border-bottom: 2px solid #4e4e4e;*/
+}
+
+.content-outer > .content-inner.news .wrap-news .list .row > div {
+    float: left;
+}
+
+.content-outer > .content-inner.news .wrap-news .list .row .thumbnail {
+    width: 326px;
+    margin-right: 35px;
+}
+
+.content-outer > .content-inner.news .wrap-news .list .row .thumbnail > img {
+    width: 100%;
+}
+
+.content-outer > .content-inner.news .wrap-news .list .row .desc {
+    /*width: 420px; 시안 */
+    /*width: 599px; 최대 */
+    width: 500px;
+}
+
+.content-outer > .content-inner.news .wrap-news .list .row .desc p {
+    font-size: 14px;
+    color: #333333;
+    line-height: 20px;
+}
+
+.content-outer > .content-inner.news .wrap-news .list .row .desc .title {
+    padding-bottom: 28px;
+}
+
+.content-outer > .content-inner.news .wrap-news .list .row .desc .title p {
+    font-size: 17px;
+}
+
+.content-outer > .content-inner.news .wrap-news .list .row .desc .sub {
+    padding-bottom: 32px;
+}
+
+.content-outer > .content-inner.news .wrap-news .list .row .desc .category span {
+    color: #707070;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.content-outer > .content-inner.news .wrap-news.detail .title-block {
+    border-top: 2px solid #4e4e4e;
+    border-bottom: 1px solid #4e4e4e;
+}
+
+.content-outer > .content-inner.news .wrap-news.detail .title-block > div {
+    display: inline-block;
+    padding-left: 20px;
+    color: #333333;
+    padding: 20px 20px;
+    font-size: 15px;
+}
+
+.content-outer > .content-inner.news .wrap-news.detail .title-block > .category {
+    float: right;
+    color: #707070;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.content-outer > .content-inner.news .wrap-news.detail .main-cnt > .inner {
+    padding: 30px 10px;
+    font-size: 14px;
+    color: #666666;
+    line-height: 20px;
+}
+
+.content-outer > .content-inner.news .wrap-news.detail .list-all {
+    width: 100%;
+    height: 48px;
+    background: #252525;
+    text-align: center;
+}
+
+.content-outer > .content-inner.news .wrap-news.detail .list-all span {
+    display: inline-block;
+    color: #77fde5;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 48px;
+    vertical-align: middle;
+}
+
+.content-outer > .content-inner.news .wrap-news.detail .list-all span:before {
+content: "\f009";
+display: inline-block;
+font-family: FontAwesome;
+font-style: normal;
+font-weight: normal;
+text-decoration: inherit;
+color: #77fde5;
+font-size: 16px;
+vertical-align: middle;
+margin-right: 5px;
+}
+
+.content-outer > .content-inner.news .wrap-news.detail .list-all span:after {
+content: "\f101";
+display: inline-block;
+font-family: FontAwesome;
+font-style: normal;
+font-weight: normal;
+text-decoration: inherit;
+color: #ffffff;
+font-size: 14px;
+/*animation-name: arrowMotionRight;
+animation-duration: 1s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-fill-mode: both;
+vertical-align: middle;*/
+margin-left: 6px;
+}
+
+/* news */
+
 .animate {
     /*visibility: hidden;*/
     opacity: 0;
