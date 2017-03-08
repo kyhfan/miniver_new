@@ -1244,16 +1244,20 @@ input[type="text"] {
 
 .workdetail .spread-block {
     background: #252525;
-    height: 350px;
+    height: 380px;
     position: relative;
 }
 
 .workdetail .spread-block .layout {
     position: absolute;
-    top: -110px;
+    top: -150px;
     left: 0;
     right: 0;
     bottom: 0;
+}
+
+.workdetail.descAndTablet .spread-block .layout {
+    top: -120px;
 }
 
 .workdetail .spread-block .spread-pages {
@@ -1283,6 +1287,52 @@ input[type="text"] {
 
 .workdetail.descAndTablet .spread-block .spread-pages img:nth-child(2) {
     margin-left: -33px;
+}
+
+.workdetail .spread-block .list-all {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.workdetail .spread-block .list-all span {
+    display: inline-block;
+    color: #77fde5;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.workdetail .spread-block .list-all span:before {
+    content: "\f009";
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #77fde5;
+    font-size: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.workdetail .spread-block .list-all span:after {
+    content: "\f101";
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #ffffff;
+    font-size: 14px;
+    animation-name: arrowMotionRight;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    vertical-align: middle;
+    margin-left: 4px;
 }
 
 
