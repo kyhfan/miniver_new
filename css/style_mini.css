@@ -64,8 +64,6 @@ input[type="text"] {
     position: relative;
 }
 
-#background-gate .wrap-gate > .gate > .anim-elems > .title {}
-
 #background-gate .wrap-gate > .gate > .anim-elems > .rotate {
     position: absolute;
     top: 0;
@@ -102,6 +100,7 @@ input[type="text"] {
     height: 100%;
     background: #2c2d2d;
     z-index: 1001;
+    display: none;  /*페이지 이동 코딩 */
 }
 
 #header .header-logo {
@@ -118,22 +117,6 @@ input[type="text"] {
     top: 50%;
     left: 23px;
 }
-
-/*#header .contact-us i {
-    color: #77fde5;
-    position: absolute;
-    /*font-size: 20px;*/
-    font-size: 25px;
-    /*top: -25px;*/
-    top: -28px;
-    /*left: 1px;*/
-    left: 4px;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-fill-mode: both;
-}
-*/
 
 #header .contact-us img {
     position: relative;
@@ -338,9 +321,6 @@ input[type="text"] {
     padding-top: 20px;
 }
 
-.layer-contact .inner .block-desc .bottom .address {
-}
-
 .layer-contact .inner .block-desc .bottom .address p {
     line-height: 20px;
     color: #ffffff;
@@ -522,6 +502,7 @@ input[type="text"] {
     top: 30px;
     cursor: pointer;
     z-index: 1000;
+    display: none; /* 페이지 이동 코딩 */
 }
 
 #nav .hamburger {
@@ -537,10 +518,6 @@ input[type="text"] {
 .work_list #nav .wrap-btn .nav-line,
 .work_detail #nav .wrap-btn .nav-line {
     background: #ffffff !important;
-}
-
-#nav:hover .hamburger .nav-line {
-    /*background: #77fde5;*/
 }
 
 #nav .hamburger .nav-line {
@@ -691,10 +668,9 @@ input[type="text"] {
     padding-left: 60px;
     width: 100%;
     height: 100%;
+    visibility: hidden;
 }
 
-.content-outer > .content-inner {
-}
 
 .content-outer > .content-inner.main {
     width: 100%;
@@ -723,18 +699,16 @@ input[type="text"] {
 
 .slider-background-wrapper .slider-background .slider-wrapper .slide {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    /*width: 100%;
+    height: 100%;*/
+    width: 645px;
+    height: 592px;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     overflow: hidden;
-    visibility: hidden;
-}
-
-.slider-background-wrapper .slider-background .slider-wrapper .slide.current {
-    visibility: visible;
+    /*visibility: hidden;*/
 }
 
 .slider-background-wrapper .slider-background .slider-wrapper .slide._01 .wrap-inner {
@@ -747,6 +721,14 @@ input[type="text"] {
 
 .slider-background-wrapper .slider-background .slider-wrapper .slide._03 .wrap-inner {
     margin-top: 246px;
+}
+
+.slider-background-wrapper .slider-background .slider-wrapper .slide._02 {
+    display: none;
+}
+
+.slider-background-wrapper .slider-background .slider-wrapper .slide._03 {
+    display: none;
 }
 
 .slider-background-wrapper .slider-background .slider-wrapper .slide .wrap-inner .title {
@@ -817,6 +799,8 @@ input[type="text"] {
     height: 1px;
     background: #77fde5;
     transition: width 1s linear;
+    -webkit-transition-delay: 1s; /* Safari */
+    transition-delay: 1s;
 }
 
 .work_list .category-box .line {
@@ -878,7 +862,7 @@ input[type="text"] {
     vertical-align: middle;
     text-align: center;
     font-family: Arial;
-    opacity: 0;
+    /*opacity: 0;*/
 }
 
 .worklist .category-box .txt-layout .title {
@@ -1031,10 +1015,6 @@ input[type="text"] {
     color: #959595;
     font-size: 10px;
     text-transform: uppercase;
-}
-
-.worklist .work-box .wrap-els .desc-zone .name {
-
 }
 
 .worklist .work-box .wrap-els .desc-zone .name span {
