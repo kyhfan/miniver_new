@@ -244,6 +244,18 @@ input[type="text"] {
     margin: 0 auto;
 }
 
+#header .sns-elems img {
+    display: none;
+}
+
+.no-svg #header .sns-elems svg {
+    display: none;
+}
+
+.no-svg #header .sns-elems img {
+    display: block;
+}
+
 #header .sns-elems svg:hover path {
     transition: fill .8s ease;
     fill:#77fde5;
