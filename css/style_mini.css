@@ -532,7 +532,7 @@ input[type="text"] {
     top: 30px;
     cursor: pointer;
     z-index: 1000;
-    display: none; /* 페이지 이동 코딩 */
+    display: none;  /*페이지 이동 코딩 */
 }
 
 #nav .hamburger {
@@ -1134,7 +1134,7 @@ input[type="text"] {
     width: 1px;
     height: 0%;
     background: #ffffff;
-    transition: height 1s linear;
+    transition: height 1s linear 2s;
 }
 
 .work_detail .content-outer > .content-inner.workdetail .device-block .layout:after {
@@ -1146,7 +1146,7 @@ input[type="text"] {
     color: #ffffff;
     text-align: center;
     opacity: 0;
-    transition: opacity 1s linear 1s;
+    transition: opacity 1s linear 3s;
 }
 
 .work_detail .content-inner.workdetail .device-block .brand,
