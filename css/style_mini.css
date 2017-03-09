@@ -246,7 +246,8 @@ input[type="text"] {
     height: 30px;
     margin: 0 auto;
     background-size: cover !important;
-    /*transition: background 0.1s linear;*/
+    -ms-behavior: url(./backgroundsize.min.htc);
+    transition: background 0.1s linear;
 }
 
 #header .sns-elems a.facebook {
@@ -996,6 +997,17 @@ input[type="text"] {
     /*display: block;*/
     max-width: 100%;
 }
+
+@media all and (max-height: 710px) {
+    .worklist .work-box .wrap-els .circle-zone {
+        padding-top:20px;
+    }
+    .worklist .work-box .wrap-els .circle-zone .circle-img {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
 
 .worklist .work-box .wrap-els .circle-img:before,
 .worklist .work-box .wrap-els .circle-img:after {

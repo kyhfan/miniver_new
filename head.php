@@ -11,8 +11,9 @@
 	<link rel="stylesheet" href="./css/style_mini.css">
 	<link rel="stylesheet" href="./lib/bxslider/jquery.bxslider.css">
 	<link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css">
-	<link href='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.css' rel='stylesheet' />	
+	<link href='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.css' rel='stylesheet' />
 	<script src="./js/jquery-1.11.2.min.js"></script>
+	<script src="./js/selectivizr-min.js"></script>
 	<script src="./js/modernizr-custom.js"></script>
 	<script src="./js/main.js"></script>
 <?
