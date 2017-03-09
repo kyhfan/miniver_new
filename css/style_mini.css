@@ -997,6 +997,17 @@ input[type="text"] {
     max-width: 100%;
 }
 
+@media all and (max-height: 710px) {
+    .worklist .work-box .wrap-els .circle-zone {
+        padding-top:20px;
+    }
+    .worklist .work-box .wrap-els .circle-zone .circle-img {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+
 .worklist .work-box .wrap-els .circle-img:before,
 .worklist .work-box .wrap-els .circle-img:after {
     content: "";
