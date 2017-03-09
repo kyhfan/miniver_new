@@ -25,4 +25,13 @@
 		$gubun = "MOBILE";
 	else
 		$gubun = "PC";
+
+
+	if (preg_match('/MSIE\s(?P<v>\d+)/i', @$_SERVER['HTTP_USER_AGENT'], $B) && $B['v'] <= 8) {
+		// Browsers IE 8 and below
+		$IE8 	= "Y";
+	} else {
+		// All other browsers
+		$IE8 	= "N";
+	}		
 ?>
