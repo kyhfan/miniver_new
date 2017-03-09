@@ -14,7 +14,7 @@
 				<ul class="clearfix">
 					<li <?=highlight_navi("about");?>><a href="javascript:void(0)" onclick="move_page('about.php');"><img src="./images/navi_01.png" alt="about"></a></li>
 					<li <?=highlight_navi("work");?>><a href="javascript:void(0);" onclick="move_page('work_list.php');"><img src="./images/navi_02.png" alt="work"></a></li>
-					<li <?=highlight_navi("news");?>><a href="javascript:void(0);" onclick="move_page('news.html');"><img src="./images/navi_03.png" alt="news"></a></li>
+					<li <?=highlight_navi("news");?>><a href="javascript:void(0);" onclick="move_page('news_list.php');"><img src="./images/navi_03.png" alt="news"></a></li>
 				</ul>
 			</div>
 		</div>

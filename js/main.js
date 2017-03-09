@@ -6,7 +6,7 @@
 
 function move_page(url)
 {
-	$("body").fadeOut("fast",function(){
+	$("body").fadeOut("slow",function(){
 		location.href 	= url;		
 	})
 }
