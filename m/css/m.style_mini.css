@@ -1,0 +1,72 @@
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+
+* {
+    box-sizing:border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Nanum Gothic', sans-serif, Arial;
+}
+
+body {
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+input[type="text"] {
+    background: none;
+    border: none;
+    box-sizing: border-box;
+    border-radius:0;
+    outline:0;
+    margin:0;
+    padding:0;
+    text-align: left;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+/*clearfix*/
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #999999;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #999999;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #999999;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #999999;
+}
