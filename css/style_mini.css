@@ -101,7 +101,7 @@ input[type="text"] {
     height: 100%;
     background: #2c2d2d;
     z-index: 1001;
-    /*display: none; 페이지 이동 코딩 */
+    display: none; /*페이지 이동 코딩 */
 }
 
 #header .header-logo {
