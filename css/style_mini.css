@@ -62,6 +62,7 @@ input[type="text"] {
     width: 450px;
     margin: 0 auto;
     position: relative;
+    visibility: hidden;
 }
 
 #background-gate .wrap-gate > .gate > .anim-elems > .rotate {
@@ -100,7 +101,7 @@ input[type="text"] {
     height: 100%;
     background: #2c2d2d;
     z-index: 1001;
-    /*display: none; 페이지 이동 코딩 */
+    display: none; /*페이지 이동 코딩 */
 }
 
 #header .header-logo {
@@ -231,39 +232,55 @@ input[type="text"] {
 }
 
 #header .sns-elems {
-    width: 30px;
-    height: 65px;
+    /*width: 30px;*/
+    /*height: 65px;*/
     position: absolute;
+    left: 0;
+    right: 0;
     bottom: 8%;
-    left: 25px;
+    /*left: 25px;*/
+}
+#header .sns-elems a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    background-size: cover !important;
+    transition: background 0.1s linear;
 }
 
-#header .sns-elems svg {
+#header .sns-elems a.facebook {
+    background: url(../images/facebook_icon.png) center no-repeat;
+    margin-bottom: 5px;
+}
+
+#header .sns-elems a.facebook:hover {
+    background: url(../images/facebook_icon_active.png) center no-repeat;
+}
+
+#header .sns-elems a.blog {
+    background: url(../images/blog_icon.png) center no-repeat;
+}
+
+#header .sns-elems a.blog:hover {
+    background: url(../images/blog_icon_active.png) center no-repeat;
+}
+
+/*#header .sns-elems svg {
     width: 25px;
     height: 30px;
     margin: 0 auto;
 }
+*/
 
-#header .sns-elems img {
-    display: none;
-}
-
-.no-svg #header .sns-elems svg {
-    display: none;
-}
-
-.no-svg #header .sns-elems img {
-    display: block;
-}
-
-#header .sns-elems svg:hover path {
+/*#header .sns-elems svg:hover path {
     transition: fill .8s ease;
     fill:#77fde5;
 }
 
 #header .sns-elems .blog-svg {
     width: 27px;
-}
+}*/
 
 .layer-contact {
     position: absolute;
@@ -514,7 +531,7 @@ input[type="text"] {
     top: 30px;
     cursor: pointer;
     z-index: 1000;
-    display: none; /* 페이지 이동 코딩 */
+    display: none;  /*페이지 이동 코딩 */
 }
 
 #nav .hamburger {
@@ -680,7 +697,7 @@ input[type="text"] {
     padding-left: 60px;
     width: 100%;
     height: 100%;
-    /*visibility: hidden;*/
+    visibility: hidden;
 }
 
 
@@ -1303,13 +1320,13 @@ input[type="text"] {
 }
 
 .workdetail .spread-block .spread-pages img {
-    margin-left: -18px;
+    /*margin-left: -18px;*/
     vertical-align: middle;
     z-index: 1;
     position: relative;
 }
 
-.workdetail .spread-block .spread-pages img:first-child {
+/*.workdetail .spread-block .spread-pages img:first-child {
     margin-left: 0;
     z-index: 2 !important;
 }
@@ -1319,13 +1336,12 @@ input[type="text"] {
 }
 
 .workdetail.descAndTablet .spread-block .spread-pages img {
-    /*margin-left: -20px;*/
     margin-left: 0;
 }
 
 .workdetail.descAndTablet .spread-block .spread-pages img:nth-child(2) {
     margin-left: -33px;
-}
+}*/
 
 .workdetail .spread-block .list-all {
     position: absolute;

@@ -17,7 +17,6 @@
 	<script src="./js/main.js"></script>
 	<script src="./lib/bxslider/jquery.bxslider.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
-	<script src='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.js'></script>
 	<style>
 	.bx-wrapper .bx-viewport
 	{

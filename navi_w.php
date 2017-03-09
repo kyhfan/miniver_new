@@ -23,7 +23,7 @@
 						</a>
 					</li>
 					<li <?=highlight_navi("news");?>>
-						<a href="javascript:void(0)" onclick="move_page('news.php');">
+						<a href="javascript:void(0)" onclick="move_page('news_list.php');">
 							<span class="news"></span>
 						</a>
 					</li>
