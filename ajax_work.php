@@ -50,9 +50,15 @@
 	    $list_query		= "SELECT * FROM ".$_gl['portfolio_info_table']." WHERE 1 AND showYN='Y' AND project_category LIKE '%".$sort."%'";
 
 	$list_result	= mysqli_query($my_db, $list_query);
+    $i =1;
 	while ($list_data = mysqli_fetch_array($list_result))
 	{
 		$cover_image 	= str_replace("../../../","",$list_data['cover_image']);
+        $work_cnt   = strlen($i);
+        if ($work_cnt < 2)
+            $work_num = "0".$i;
+        else
+            $work_num = $i;
 ?>                    
 					<div class="work-box">
 						<a href="javascript:void(0);" onclick="move_page('work_detail.php?idx=<?=$list_data['idx']?>');">
@@ -60,7 +66,7 @@
 								<div class="title-cate">
 									<div class="push-line"></div>
 									<span>
-										digital campaign
+										<?=$list_data['project_category']?>
 									</span>
 								</div>
 								<div class="wrap-els">
@@ -90,10 +96,11 @@
 										</div>
 									</div>
 								</div>
-								<div class="push-line" data-no="01"></div>
+								<div class="push-line" data-no="<?=$work_num?>"></div>
 							</div>
 						</a>
 					</div>
 <?
+        $i++;
 	}
 ?>					
