@@ -241,13 +241,7 @@
 
 
 	$(window).load(function() {
-
-		$("#header").fadeIn(600, function(){
-			$("#nav").fadeIn(600, function(){
-				$(".content-outer").css("visibility","visible");
-				 TweenMax.from( $('.content-outer'), 0.5, {css:{opacity:0}});
-			});
-		});
+		page_load();       
 
 		var pathName = location.pathname.split("/")[2].split(".")[0];
 		$body.addClass(pathName);

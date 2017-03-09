@@ -31,17 +31,8 @@
 		$body.addClass(pathName);
 		// TweenMax.set('.txt-layout', {opacity: 0});
 		TweenMax.to('.txt-layout', 2, {opacity: 1});
-		$('.category-box .bl').bind('transitionend', function() {
-		});
 
-		$("#header").fadeIn(600, function(){
-			$("#nav").fadeIn(600, function(){
-				$(".content-outer").css("visibility","visible");
-				sort_work('all');		
-				 TweenMax.from( $('.content-outer'), 0.5, {css:{opacity:0}});
-			});
-		});
-        
+		page_load();       
 	});
 
 	$('.contact-us > a').on('click', function(e) {

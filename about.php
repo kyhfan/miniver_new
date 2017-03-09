@@ -76,15 +76,7 @@
 			pager: false
 		});
 
-		$("#header").fadeIn(600, function(){
-			$("#nav").fadeIn(600, function(){
-				//$(".content-outer").fadeIn(300);
-				//TweenMax.staggerFrom('.content-outer', .5, {opacity: 1}, 0.1);
-				$(".content-outer").css("visibility","visible");
-				 TweenMax.from( $('.content-outer'), 0.5, {css:{opacity:0}});
-				//TweenMax.staggerFrom("li", .5, {top:100, opacity:0, delay:1, ease:Back.easeOut}, 0.1);
-			});
-		});
+		page_load();       
 	});
 
 	$('.contact-us > a').on('click', function(e) {
