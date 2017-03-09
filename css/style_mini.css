@@ -1320,13 +1320,13 @@ input[type="text"] {
 }
 
 .workdetail .spread-block .spread-pages img {
-    margin-left: -18px;
+    /*margin-left: -18px;*/
     vertical-align: middle;
     z-index: 1;
     position: relative;
 }
 
-.workdetail .spread-block .spread-pages img:first-child {
+/*.workdetail .spread-block .spread-pages img:first-child {
     margin-left: 0;
     z-index: 2 !important;
 }
@@ -1336,13 +1336,12 @@ input[type="text"] {
 }
 
 .workdetail.descAndTablet .spread-block .spread-pages img {
-    /*margin-left: -20px;*/
     margin-left: 0;
 }
 
 .workdetail.descAndTablet .spread-block .spread-pages img:nth-child(2) {
     margin-left: -33px;
-}
+}*/
 
 .workdetail .spread-block .list-all {
     position: absolute;
