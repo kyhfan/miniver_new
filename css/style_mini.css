@@ -246,6 +246,7 @@ input[type="text"] {
     height: 30px;
     margin: 0 auto;
     background-size: cover !important;
+    -ms-behavior: url(./backgroundsize.min.htc);
     transition: background 0.1s linear;
 }
 
