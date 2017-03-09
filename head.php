@@ -15,7 +15,18 @@
 	<script src="./js/jquery-1.11.2.min.js"></script>
 	<script src="./js/modernizr-custom.js"></script>
 	<script src="./js/main.js"></script>
+<?
+    if ($IE8 == "Y")
+    {
+?>    
+	<script src="./lib/bxslider/jquery.bxslider_ie8.js"></script>
+<?
+    }else{
+?>
 	<script src="./lib/bxslider/jquery.bxslider.js"></script>
+<?
+    }
+?>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
 	<style>
 	.bx-wrapper .bx-viewport
