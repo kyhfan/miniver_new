@@ -531,7 +531,7 @@ input[type="text"] {
     top: 30px;
     cursor: pointer;
     z-index: 1000;
-    display: none;  /*페이지 이동 코딩 */
+    display: none; /* 페이지 이동 코딩 */
 }
 
 #nav .hamburger {
