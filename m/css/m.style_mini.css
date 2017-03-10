@@ -43,6 +43,68 @@ input[type="text"] {
 }
 
 
+#miniver {
+    width: 100%;
+    height: 100%;
+}
+
+.background-gate {
+  width: 100%;
+  height: 100%;
+  background: #000000;
+}
+
+.background-gate .wrap-gate {
+  height: 100%;
+  display: table;
+}
+
+.background-gate .wrap-gate .gate {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.background-gate .wrap-gate .gate .anim-elems {
+  width: 100%;
+  position: relative;
+}
+
+.background-gate .wrap-gate .gate .anim-elems img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.background-gate .wrap-gate .gate .anim-elems .title {
+  text-align: center;
+  position: absolute;
+  width: 23%;
+  height: auto;
+  top: 42.5%;
+  left: 38.5%;
+  visibility: hidden;
+}
+
+.background-gate .wrap-gate .gate .anim-elems .rotate {
+  width: 100%;
+  visibility: hidden;
+}
+
+.background-gate .wrap-gate .loading-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.2);
+    height: 2px;
+    width: 100%;
+    visibility: hidden;
+}
+
+.background-gate .wrap-gate .loading-bar > .fill {
+    background-color: #ffffff;
+    width: 0;
+    height: 2px;
+}
 
 
 
