@@ -249,7 +249,8 @@ $(window).load(function() {
 		}
 	}
 
-	$('.content-inner').scroll(function() {
+	$('.content-inner').scroll(function(e) {
+		e.preventDefault();
 		scrolled = true;
 	});
 
