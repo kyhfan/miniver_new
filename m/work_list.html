@@ -213,6 +213,7 @@ $(window).load(function() {
 	var $body = $('body');
 	var menuBtn = $('.nav');
 	var scrolled = false;
+	var windowBottom = $(window).height();
 
 	menuBtn.on('click', function(e) {
 		e.stopPropagation();
@@ -262,7 +263,6 @@ $(window).load(function() {
 	function hasScrolled() {
 		// console.log($('.content-inner').scrollTop());
 		// currentBottom = $(window).height() + $(this).scrollTop();
-		var windowCenter = $(window).height()/2;
 		// currentBottom = $(window).height() + $('.content-inner').scrollTop();
 		// $.each($animateElem, function() {
 		// 	if(currentBottom >= ($(this).offset().top) && $(this).hasClass('animate')) {
@@ -273,29 +273,34 @@ $(window).load(function() {
 		// console.log(windowCenter);
 
 		$('.work-block').each(function(idx) {
-			// console.log(currentBottom);
-			// if(currentBottom >= ($(this).height()/2) && currentBottom < $(this).offset().top){
-			// console.log("현재 페이지 하단:"+currentBottom);
-			// console.log("현재 페이지 중간:"+currentBottom);
-			// console.log("현재 work box 중간점:"+$(this).offset().top+$('.work-box').height()/2);
-			// if(currentBottom >= ($(this).offset().top+$(this).outerHeight()/2)+129 && !$(this).hasClass('in-view')) {
-			// 	$('.work-block').removeClass('in-view');
-			// 	$(this).addClass('in-view');
-			// 	// console.log($(this));
-			// }else {
-			// 	console.log('in');
-			// 	// $('.work-block').removeClass('in-view');
-			// }
-			if(windowCenter+40 >= $(this).offset().top+$(this).outerHeight()/2 || windowCenter-40 >= $(this).offset().top+$(this).outerHeight()/2) {
+		// 	// console.log(currentBottom);
+		// 	// if(currentBottom >= ($(this).height()/2) && currentBottom < $(this).offset().top){
+		// 	// console.log("현재 페이지 하단:"+currentBottom);
+		// 	// console.log("현재 페이지 중간:"+currentBottom);
+		// 	// console.log("현재 work box 중간점:"+$(this).offset().top+$('.work-box').height()/2);
+		// 	// if(currentBottom >= ($(this).offset().top+$(this).outerHeight()/2)+129 && !$(this).hasClass('in-view')) {
+		// 	// 	$('.work-block').removeClass('in-view');
+		// 	// 	$(this).addClass('in-view');
+		// 	// 	// console.log($(this));
+		// 	// }else {
+		// 	// 	console.log('in');
+		// 	// 	// $('.work-block').removeClass('in-view');
+		// 	// }
+		// 	if(windowCenter+40 >= $(this).offset().top+$(this).outerHeight()/2 || windowCenter-40 >= $(this).offset().top+$(this).outerHeight()/2) {
+		// 		$('.work-block').removeClass('in-view');
+		// 		$(this).addClass('in-view');
+		// 	}
+		// 	// if(currentBottom > $(this).offset().top+$(this).height()/2) {
+		// 	// 	// console.log("in-view");
+		// 		// $('.work-box').removeClass('in-view');
+		// 		// $(this).addClass('in-view');
+		// 	// }
+		// });
+			var offsetBottom = $(this).offset().top + $(this).outerHeight();
+			if(windowBottom-5 >= offsetBottom || windowBottom+5 >= offsetBottom) {
 				$('.work-block').removeClass('in-view');
 				$(this).addClass('in-view');
 			}
-			// if(currentBottom > $(this).offset().top+$(this).height()/2) {
-			// 	// console.log("in-view");
-				// $('.work-box').removeClass('in-view');
-				// $(this).addClass('in-view');
-			// }
-
 		});
 	}
 
