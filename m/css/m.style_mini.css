@@ -701,15 +701,24 @@ input[type="tel"] {
   text-align: center;
 }
 
-.device-block > .inner .mock-up img {
-  width: 100%;
+.device-block > .inner .mock-up > .inner  {
   display: block;
   position: relative;
   top: 25px;
 }
 
+.device-block > .inner .mock-up > .inner img {
+  display: block;
+  width: 100%;
+}
+
+.device-block > .inner .mock-up .video {
+  width: 80.1%;
+  margin: 0 auto;
+}
+
 .desc-block {
-  padding: 11.25% 0 23%;
+  padding: 14.25% 0 23%;
   width: 93.75%;
   margin: 0 auto;
   opacity: 0;
@@ -792,6 +801,16 @@ input[type="tel"] {
 .desc-block .papers ._03 {z-index: 1;}
 
 .desc-block .papers .paper img {
+  width: 100%;
+}
+
+.desc-block .capture-block {
+  position: relative;
+  top: -15px;
+}
+
+.desc-block .capture-block img {
+  display: block;
   width: 100%;
 }
 
