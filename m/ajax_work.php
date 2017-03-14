@@ -24,7 +24,6 @@
         else
             $in_view    = "";
 ?>                    
-				<div class="block-work-list">
 					<a href="javascript:void(0);" onclick="move_page('work_detail.php?idx=<?=$list_data['idx']?>');">
                         <div class="work-block <?=$in_view?>">
                             <div class="circle-thumb">
@@ -63,7 +62,6 @@
                             </div>
                         </div>
                     </a>
-				</div>
 <?
         $i++;
 	}
