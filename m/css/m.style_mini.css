@@ -28,7 +28,8 @@ h2, p {
     padding: 0;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="tel"] {
     background: none;
     border: none;
     box-sizing: border-box;
@@ -121,7 +122,7 @@ input[type="text"] {
   right: 0;
   height: 41px;
   z-index: 100;
-  display: none;
+  /*display: none;*/
 }
 
 .header-outer {
@@ -260,7 +261,7 @@ input[type="text"] {
   /*background: rgba(37,37,37,.9);*/
   -webkit-transition:all 1s ease-in-out;
   transition: all 1s ease-in-out;
-  z-index: -1;
+  z-index: 0;
 }
 
 .menu-layer > .inner {
@@ -308,9 +309,6 @@ input[type="text"] {
   z-index:99;
 }
 
-.menuOpen .menu-layer > .inner {
-}
-
 
 /* menu layer */
 
@@ -326,7 +324,7 @@ input[type="text"] {
   /*overflow-y: auto;*/
   z-index: 1;
   overflow: hidden;
-  opacity: 0;
+  /*opacity: 0;*/
 }
 
 .content-outer .content-inner {
@@ -854,6 +852,264 @@ input[type="text"] {
 }
 
 /* work detail */
+
+
+/* contact us */
+
+.contact_us .content-inner {
+  background: #252525;
+}
+.wrapper-contactUs {
+  background: #252525;
+  width: 100%;
+  /*height: 100%;*/
+  color: #ffffff;
+}
+
+.wrapper-contactUs .wrapper {
+  width: 72%;
+  margin: 0 auto;
+  padding: 14.5% 0 10%;
+}
+
+.wrapper-contactUs .wrapper .title {
+  width: 42%;
+  /*padding-bottom: 3.8%;*/
+}
+
+.wrapper-contactUs .wrapper .title img {
+  width: 100%;
+}
+
+.wrapper-contactUs .wrapper .sub {
+  padding: 3.8% 0;
+  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid rgba(255,255,255,.7);
+}
+
+.wrapper-contactUs .wrapper .sub p {
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.wrapper-contactUs .wrapper .address-zone {
+  padding: 3% 0;
+}
+
+.wrapper-contactUs .wrapper .address-zone .corp {
+  font-weight: bold;
+}
+
+.wrapper-contactUs .wrapper .address-zone p {
+  font-size: 12px;
+  padding-bottom: 1%;
+}
+
+.wrapper-contactUs .wrapper .address-zone p:last-child {
+  padding-bottom: 0;
+}
+
+.wrapper-contactUs .wrapper .swap-button span {
+  color: #77fde5;
+  font-size: 12px;
+}
+
+.wrapper-contactUs .wrapper .swap-button span:before {
+  content: "\f041";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  display: inline-block;
+  padding-right: 3px;
+  font-size: 12px;
+}
+
+.wrapper-contactUs .wrapper .swap-button span:after {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  display: inline-block;
+  padding-left: 5px;
+  font-size: 12px;
+  color: #ffffff;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.wrapper-contactUs .wrapper .swap-button span.map:after {
+    content: "\f101";
+}
+
+.wrapper-contactUs .wrapper .swap-button span.back:after {
+    content: "\f100";
+}
+
+.wrapper-contactUs .wrapper .swap-button a span.map:after {
+    -webkit-animation-name: arrowMotionRight;
+            animation-name: arrowMotionRight;
+
+}
+
+.wrapper-contactUs .wrapper .swap-button a span.back:after {
+    -webkit-animation-name: arrowMotionLeft;
+            animation-name: arrowMotionLeft;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+}
+
+@-webkit-keyframes arrowMotionRight {
+    from {
+        -webkit-transform: translateX(0px);
+                transform: translateX(0px);
+    }
+    to {
+        -webkit-transform: translateX(2px);
+                transform: translateX(2px);
+    }
+}
+
+@keyframes arrowMotionRight {
+    from {
+        -webkit-transform: translateX(0px);
+                transform: translateX(0px);
+    }
+    to {
+        -webkit-transform: translateX(2px);
+                transform: translateX(2px);
+    }
+}
+
+@-webkit-keyframes arrowMotionLeft {
+    from {
+        -webkit-transform: translateX(2px);
+                transform: translateX(2px);
+    }
+    to {
+        -webkit-transform: translateX(0px);
+                transform: translateX(0px);
+    }
+}
+
+@keyframes arrowMotionLeft {
+    from {
+        -webkit-transform: translateX(2px);
+                transform: translateX(2px);
+    }
+    to {
+        -webkit-transform: translateX(0px);
+                transform: translateX(0px);
+    }
+}
+
+.wrap-swap-content {
+  margin-top: 10%;
+  position: relative;
+}
+
+.block-send .row {
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 0.5%;
+  margin-bottom: 5%;
+}
+
+.block-send .last {
+  margin-bottom: 10%;
+}
+
+.block-send .row input[type="text"],
+.block-send .row input[type="tel"] {
+  font-size: 12px;
+}
+
+.block-send .textBox {
+  width: 100%;
+  height: 131px;
+  border: 1px solid #ffffff;
+}
+
+.block-send .textBox textarea {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  resize: none;
+  overflow: auto;
+  border: none;
+  margin: 0;
+  padding: 5px;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.block-send .sendIcon {
+  text-align: right;
+  padding-top: 3%;
+}
+
+.block-send .sendIcon span {
+  color: #77fde5;
+  font-size: 12px;
+}
+
+.block-send .sendIcon span:after {
+  content: "\f101";
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  padding-left: 5px;
+  font-size: 12px;
+  color: #ffffff;
+  /*-webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;*/
+}
+
+.block-map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: none;
+}
+
+.block-map .map {
+  padding-bottom: 3%;
+}
+
+.block-map .map img {
+  width: 100%;
+}
+
+.block-map .desc p {
+  font-size: 12px;
+  padding-bottom: 1.5%;
+}
+
+@media all and (max-width: 320px) {
+  .wrapper-contactUs .wrapper .sub p {
+    font-size: 11px;
+  }
+  .block-map .desc p {
+    font-size: 11px;
+  }
+}
+
+/* contact us */
 
 /* content */
 
