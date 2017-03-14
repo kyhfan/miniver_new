@@ -48,6 +48,12 @@ input[type="text"] {
     padding-top: 41px;
 }
 
+#miniver_gate {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
 .background-gate {
   width: 100%;
   height: 100%;
