@@ -1,15 +1,6 @@
-<html lang="ko">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
-	<link href="../css/normalize.css" rel="stylesheet" />
-	<link href="./css/m.style_mini.css" rel="stylesheet" />
-	<link href="../lib/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-	<script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script>
-	<script type="text/javascript" src="../js/modernizr-custom.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
-	<!-- <script type="text/javascript" src="../js/m_main.js"></script> -->
-</head>
+<?
+	include_once "head.php";
+?>
 <body>
 	<div id="miniver">
 		<div class="header">
@@ -34,25 +25,25 @@
 				</div>
 			</div>
 		</div>
-		<div class="menu-layer">
-			<div class="inner">
-				<div class="menu-list">
-					<a href="#" class="about">
-						<img src="./images/navi_01.png" alt="about">
-					</a>
-					<a href="#" class="work current">
-						<img src="./images/navi_02.png" alt="work">
-					</a>
-					<a href="#" class="news">
-						<img src="./images/navi_03.png" alt="news">
-					</a>
-					<a href="#" class="contactUs">
-						<img src="./images/navi_04.png" alt="contact us">
-					</a>
-				</div>
-			</div>
-		</div>
 		<div class="content-outer">
+            <div class="menu-layer">
+                <div class="inner">
+                    <div class="menu-list">
+                        <a href="#" class="about">
+                            <img src="./images/navi_01.png" alt="about">
+                        </a>
+                        <a href="#" class="work current">
+                            <img src="./images/navi_02.png" alt="work">
+                        </a>
+                        <a href="#" class="news">
+                            <img src="./images/navi_03.png" alt="news">
+                        </a>
+                        <a href="#" class="contactUs">
+                            <img src="./images/navi_04.png" alt="contact us">
+                        </a>
+                    </div>
+                </div>
+            </div>
 			<div class="content-inner">
 				<div class="block-work-cate">
 					<div class="cate-outer">
@@ -132,78 +123,6 @@
 							</div>
 						</div>
 					</div>
-					<div class="work-block">
-						<div class="circle-thumb">
-							<div class="thumbnail">
-								<div class="img">
-									<img src="./images/circle_thumbnail2.png" alt="">
-								</div>
-							</div>
-							<div class="wrap-category">
-								<div class="push-line"></div>
-								<div class="cate-name">
-									<span>CAMPAIGN</span>
-								</div>
-							</div>
-						</div>
-						<div class="desc-zone">
-							<div class="project">
-								<div class="guide">
-									<span>project</span>
-								</div>
-								<div class="name">
-									<span>어린이재활병원</span>
-								</div>
-							</div>
-							<div class="client">
-								<div class="guide">
-									<span>client</span>
-								</div>
-								<div class="name">
-									<span>NEXON</span>
-								</div>
-							</div>
-							<div class="wrap-product-number" data-no="02">
-								<div class="push-line"></div>
-							</div>
-						</div>
-					</div>
-					<div class="work-block">
-						<div class="circle-thumb">
-							<div class="thumbnail">
-								<div class="img">
-									<img src="./images/circle_thumbnail3.png" alt="">
-								</div>
-							</div>
-							<div class="wrap-category">
-								<div class="push-line"></div>
-								<div class="cate-name">
-									<span>CAMPAIGN</span>
-								</div>
-							</div>
-						</div>
-						<div class="desc-zone">
-							<div class="project">
-								<div class="guide">
-									<span>project</span>
-								</div>
-								<div class="name">
-									<span>예뻐지는 가방</span>
-								</div>
-							</div>
-							<div class="client">
-								<div class="guide">
-									<span>client</span>
-								</div>
-								<div class="name">
-									<span>THE FACESHOP</span>
-								</div>
-							</div>
-							<div class="wrap-product-number" data-no="03">
-								<div class="push-line"></div>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -214,6 +133,8 @@ $(window).load(function() {
 	var menuBtn = $('.nav');
 	var scrolled = false;
 	var windowBottom = $(window).height();
+
+    page_load();
 
 	menuBtn.on('click', function(e) {
 		e.stopPropagation();

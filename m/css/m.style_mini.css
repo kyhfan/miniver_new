@@ -121,6 +121,7 @@ input[type="text"] {
   right: 0;
   height: 41px;
   z-index: 100;
+  display: none;
 }
 
 .header-outer {
@@ -325,6 +326,7 @@ input[type="text"] {
   /*overflow-y: auto;*/
   z-index: 1;
   overflow: hidden;
+  opacity: 0;
 }
 
 .content-outer .content-inner {
