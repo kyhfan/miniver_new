@@ -3,47 +3,10 @@
 ?>
 <body>
 	<div id="miniver">
-		<div class="header">
-			<div class="header-outer">
-				<div class="header-inner clearfix">
-					<a href="" class="logo">
-						<span class="sr-only">MINIVERTISING</span>
-					</a>
-					<div class="nav">
-						<div class="wrap-btn">
-							<div class="hamburger">
-								<div class="nav-line"></div>
-								<div class="nav-line"></div>
-								<div class="nav-line"></div>
-							</div>
-							<div class="cross">
-								<div class="nav-line"></div>
-								<div class="nav-line"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+<?
+	include_once "header.php";
+?>
 		<div class="content-outer">
-            <div class="menu-layer">
-                <div class="inner">
-                    <div class="menu-list">
-                        <a href="#" class="about">
-                            <img src="./images/navi_01.png" alt="about">
-                        </a>
-                        <a href="#" class="work current">
-                            <img src="./images/navi_02.png" alt="work">
-                        </a>
-                        <a href="#" class="news">
-                            <img src="./images/navi_03.png" alt="news">
-                        </a>
-                        <a href="#" class="contactUs">
-                            <img src="./images/navi_04.png" alt="contact us">
-                        </a>
-                    </div>
-                </div>
-            </div>
 			<div class="content-inner">
 				<div class="block-work-cate">
 					<div class="cate-outer">
@@ -59,24 +22,24 @@
 								<div class="block-catelist">
 									<div class="inner">
 										<div class="row">
-											<a href="#" class="cate all active">
+											<a href="javascript:void(0);" onclick="sort_work('all');" class="cate all active">
 												<span>all</span>
 											</a>
-											<a href="#" class="cate viral">
+											<a href="javascript:void(0);" onclick="sort_work('viral');" class="cate viral">
 												<span>VIRAL FILM</span>
 											</a>
-											<a href="#" class="cate app">
+											<a href="javascript:void(0);" onclick="sort_work('app');" class="cate app">
 												<span>APP</span>
 											</a>
-											<a href="#" class="cate promotion">
+											<a href="javascript:void(0);" onclick="sort_work('promotion');" class="cate promotion">
 												<span>PROMOTION</span>
 											</a>
 										</div>
 										<div class="row">
-											<a href="#" class="cate campaign">
+											<a href="javascript:void(0);" onclick="sort_work('digital');" class="cate digital">
 												<span>DIGITAL CAMPAIGN</span>
 											</a>
-											<a href="#" class="cate onOff">
+											<a href="javascript:void(0);" onclick="sort_work('event');" class="cate event">
 												<span>ON&OFFLINE EVENT</span>
 											</a>
 										</div>
@@ -87,42 +50,6 @@
 					</div>
 				</div>
 				<div class="block-work-list">
-					<div class="work-block in-view">
-						<div class="circle-thumb">
-							<div class="thumbnail">
-								<div class="img">
-									<img src="./images/circle_thumbnail.png" alt="">
-								</div>
-							</div>
-							<div class="wrap-category">
-								<div class="push-line"></div>
-								<div class="cate-name">
-									<span>CAMPAIGN</span>
-								</div>
-							</div>
-						</div>
-						<div class="desc-zone">
-							<div class="project">
-								<div class="guide">
-									<span>project</span>
-								</div>
-								<div class="name">
-									<span>생명을 살리는 스티커</span>
-								</div>
-							</div>
-							<div class="client">
-								<div class="guide">
-									<span>client</span>
-								</div>
-								<div class="name">
-									<span>MINIVERTISING</span>
-								</div>
-							</div>
-							<div class="wrap-product-number" data-no="01">
-								<div class="push-line"></div>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -148,7 +75,6 @@ $(window).load(function() {
 			$body.addClass('menuOpen');
 			// TweenMax.staggerFromTo('.wrap-menu li', .75, {opacity: 0, scale:0}, {opacity: 1, scale: 1}, 0.25);
 			// $('.cross .nav-line:last-child').bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
-
 			// });
 			// $body.addClass('menuOpen');
 			TweenMax.staggerFromTo('.menu-layer .menu-list a', .35, {autoAlpha: 0, scale:0}, {autoAlpha: 1, scale: 1}, 0.25);

@@ -253,7 +253,7 @@ input[type="tel"] {
 
 .menu-layer {
   position: absolute;
-  top: 41px;
+  /*top: 41px;*/
   left: 0;
   right: 0;
   height: 0;
@@ -306,7 +306,7 @@ input[type="tel"] {
 
 .menuOpen .menu-layer {
   height: 100%;
-  z-index:99;
+  z-index:999;
 }
 
 
