@@ -1381,7 +1381,6 @@ input[type="text"] {
 }
 
 .workdetail .desc-block .papers .paper._01 {
-    /*top: 10px;*/
     z-index: 3;
     /*top: 0;*/
 }
