@@ -656,10 +656,31 @@ input[type="text"] {
 }
 
 .device-block .layout {
-  width: 1px;
+  margin-bottom: 2.9%;
   height: 26px;
+}
+
+.device-block .layout .push-line {
   background: #ffffff;
-  margin: 0 auto 2.9%;
+  width: 1px;
+  height: 0;
+  margin: 0 auto;
+  transition: all .5s linear .3s;
+  opacity: 0;
+}
+
+.work_detail .device-block .layout .push-line {
+  height: 26px;
+  opacity: 1;
+}
+
+.device-block > .inner .wrap-text {
+  opacity: 0;
+  transition: opacity 1s ease .5s;
+}
+
+.work_detail .device-block > .inner .wrap-text {
+  opacity: 1;
 }
 
 .device-block > .inner .brand {
@@ -669,10 +690,6 @@ input[type="text"] {
 .device-block > .inner .brand span {
   color: #ffffff;
   font-size: 12px;
-}
-
-.device-block > .inner .title {
-  /*margin-bottom: 6.4%;*/
 }
 
 .device-block > .inner .title h3 {
@@ -691,6 +708,149 @@ input[type="text"] {
   display: block;
   position: relative;
   top: 25px;
+}
+
+.desc-block {
+  padding: 11.25% 0 23%;
+  width: 93.75%;
+  margin: 0 auto;
+  opacity: 0;
+  transition: opacity 1s linear 1s;
+}
+
+.work_detail .desc-block {
+  opacity: 1;
+}
+
+.desc-block .row-block {
+  border-top: 2px solid #bcbbbb;
+}
+
+.desc-block .row-block .row {
+  border-bottom: 1px solid #d3d3d3;
+  padding: 2.8% 0;
+}
+
+.desc-block .row-block .row span {
+  display: inline-block;
+}
+
+.desc-block .row-block .row .guide {
+  font-weight: bold;
+  font-family: Arial;
+  font-size: 12px;
+  color: #434343;
+}
+
+.desc-block .row-block .row .adInput {
+  color: #686868;
+  font-size: 12px;
+}
+
+.desc-block .box-block {
+  padding: 3.3% 0 11%;
+}
+
+.desc-block .box-block .box:first-child {
+  margin-bottom: 4%;
+}
+
+.desc-block .box-block .box .title {
+  padding-bottom: 1%;
+}
+
+.desc-block .box-block .box .title span {
+  display: inline-block;
+  color: #ffffff;
+  background: #252525;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 1px;
+}
+
+.desc-block .box-block .box .flow-text p {
+  color: #686868;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.desc-block .papers {
+  position: relative;
+  top: -30px;
+  min-height: 200px; /* 임시 추가 */
+}
+
+.desc-block .papers .paper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  text-align: center;
+}
+
+.desc-block .papers ._01 {z-index: 3;}
+.desc-block .papers ._02 {z-index: 2;}
+.desc-block .papers ._03 {z-index: 1;}
+
+.desc-block .papers .paper img {
+  width: 100%;
+}
+
+.spread-block {
+  background: #252525;
+  position: relative;
+  width: 100%;
+}
+
+.spread-block .spread-pages {
+  text-align: center;
+  position: relative;
+  top: -70px;
+  visibility: hidden;
+  width: 100%;
+}
+
+.spread-block .spread-pages img {
+  width: 100%;
+}
+
+.spread-block .list-all {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  bottom: 17%;
+}
+
+.spread-block .list-all span {
+  display: inline-block;
+  color: #6bf1d9;
+  font-size: 13px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.spread-block .list-all span:before,
+.spread-block .list-all span:after {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+
+.spread-block .list-all span:before {
+  content: "\f009";
+  color: #77fde5;
+  margin-right: 5px;
+}
+
+.spread-block .list-all span:after {
+  content: "\f101";
+  color: #ffffff;
+  margin-left: 6px;
 }
 
 /* work detail */
