@@ -121,7 +121,7 @@ input[type="text"] {
   right: 0;
   height: 41px;
   z-index: 100;
-  display: none;
+  /*display: none;*/
 }
 
 .header-outer {
@@ -252,7 +252,7 @@ input[type="text"] {
 
 .menu-layer {
   position: absolute;
-  top: 41px;
+  /*top: 41px;*/
   left: 0;
   right: 0;
   height: 0;
@@ -305,7 +305,7 @@ input[type="text"] {
 
 .menuOpen .menu-layer {
   height: 100%;
-  z-index:99;
+  z-index:999;
 }
 
 .menuOpen .menu-layer > .inner {
@@ -326,7 +326,7 @@ input[type="text"] {
   /*overflow-y: auto;*/
   z-index: 1;
   overflow: hidden;
-  opacity: 0;
+  /*opacity: 0;*/
 }
 
 .content-outer .content-inner {

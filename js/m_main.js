@@ -32,6 +32,8 @@ function sort_work(param)
 			"sort_work"					: param
 		},
 		success: function(response){
+			$(".cate").removeClass("active");
+			$("."+param).addClass("active");
 			$(".block-work-list").html(response);
 		}
 	});
