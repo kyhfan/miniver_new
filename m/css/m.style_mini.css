@@ -1288,3 +1288,81 @@ input[type="tel"] {
 :-moz-placeholder { /* Firefox 18- */
   color: #999999;
 }
+
+.news-content {
+  width: 90.31%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.news-content a {
+  display: block;
+  background: url(../images/news_logo.png) no-repeat;
+  background-size: cover;
+  width: 47px;
+  height: 17px;
+  float: left;
+  margin: 10.5% 0 2.6%;
+
+}
+
+.news-content .news-top-line
+{
+  width:100%;
+  border:solid 0.1px #000000;
+}
+
+.news-content .news-block
+{
+  width:100%;
+  position:relative;
+  border-bottom: solid 1px rgba(194, 195, 195, 0.17);
+  padding: 5.3% 0 2.5%;
+  color: #555555;
+}
+
+.news-content .news-block.first
+{
+  padding-top: 1%;
+}
+
+.news-content .news_img
+{
+  width: 100%;
+  margin-bottom: 4%;
+}
+
+.news-content .news_img img
+{
+  width: 100%;
+}
+
+.news-content .title-txt
+{
+  position:relative;
+  width: 100%;
+  height: 3.2%;
+}
+
+.news-content .title-txt .txt1
+{
+  position:absolute;
+  font-size: 10.5px;
+  left: 0;
+}
+
+.news-content .title-txt .txt2
+{
+  position:absolute;
+  font-size: 7.5px;
+  color: #707070;
+  right: 0;
+}
+
+.news-content .desc-txt
+{
+  width: 100%;
+  font-size: 10.5px;
+  margin: 1.3% 0 3%;
+  line-height: 1.4;
+}
