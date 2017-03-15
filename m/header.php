@@ -1,7 +1,7 @@
 		<div class="header">
 			<div class="header-outer">
 				<div class="header-inner clearfix">
-					<a href="" class="logo">
+					<a href="javascript:void(0);" onclick="move_page('work_list.php');" class="logo">
 						<span class="sr-only">MINIVERTISING</span>
 					</a>
 					<div class="nav">
