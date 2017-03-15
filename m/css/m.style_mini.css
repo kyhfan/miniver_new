@@ -6,7 +6,7 @@
 }
 
 html, body {
-  width: 100%;
+    width: 100%;
     height: 100%;
     overflow: hidden;
     font-family: 'Nanum Gothic', sans-serif, Arial;
@@ -324,7 +324,7 @@ input[type="tel"] {
   /*overflow-y: auto;*/
   z-index: 1;
   overflow: hidden;
-  /*opacity: 0;*/
+  opacity: 0;
 }
 
 .content-outer .content-inner {
@@ -716,6 +716,12 @@ input[type="tel"] {
 .device-block > .inner .mock-up .video {
   width: 80.1%;
   margin: 0 auto;
+}
+
+.device-block > .inner .mock-up .video > iframe {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s ease-in, visibility .3s ease-in;
 }
 
 .desc-block {

@@ -43,7 +43,7 @@
 								?>
 								<!--  desc phone tablet layout -->
 									<!-- <img src="./images/tf_ink_01.png" alt=""> -->
-									<img src="<?=str_replace("../../../","",$portfolio_info['m_main_image'])?>" alt="">
+									<img src="<?=str_replace("../../../","../",$portfolio_info['m_main_image'])?>" alt="">
 								<!--  desc phone tablet layout -->
 								<?
 								}
@@ -98,7 +98,7 @@
 					?>
 					<!-- video layout -->
 						<div class="capture-block">
-							<img src="<?=str_replace("../../../","",$portfolio_info['m_middle_image1'])?>" alt="">
+							<img src="<?=str_replace("../../../","../",$portfolio_info['m_middle_image1'])?>" alt="">
 							<!-- <img src="./images/tf_bag_02_01.png" alt=""> -->
 						</div>
 					<!-- video layout -->
@@ -108,15 +108,15 @@
 					<!--  desc phone tablet layout -->
 					<div class="papers">
 						<div class="paper _01 animate" data-animation-name="paperDrop">
-							<img src="<?=str_replace("../../../","",$portfolio_info['m_middle_image3'])?>" alt="">
+							<img src="<?=str_replace("../../../","../",$portfolio_info['m_middle_image3'])?>" alt="">
 							<!-- <img src="./images/tf_ink_02_01.png" alt=""> -->
 						</div>
 						<div class="paper _02 animate" data-animation-name="paperDrop">
-							<img src="<?=str_replace("../../../","",$portfolio_info['m_middle_image2'])?>" alt="">
+							<img src="<?=str_replace("../../../","../",$portfolio_info['m_middle_image2'])?>" alt="">
 							<!-- <img src="./images/tf_ink_02_02.png" alt=""> -->
 						</div>
 						<div class="paper _03 animate" data-animation-name="paperDrop">
-							<img src="<?=str_replace("../../../","",$portfolio_info['m_middle_image1'])?>" alt="">
+							<img src="<?=str_replace("../../../","../",$portfolio_info['m_middle_image1'])?>" alt="">
 							<!-- <img src="./images/tf_ink_02_02.png" alt=""> -->
 						</div>
 					</div>
@@ -128,10 +128,10 @@
 				<div class="spread-block">
 					<div class="spread-pages animate" data-animation-name="fadeInUp">
 						<!-- <img src="./images/tf_ink_03.png" alt=""> -->
-						<img src="<?=str_replace("../../../","",$portfolio_info['web_image'])?>" alt="">
+						<img src="<?=str_replace("../../../","../",$portfolio_info['web_image'])?>" alt="">
 					</div>
 					<div class="list-all">
-						<a href="#">
+						<a href="javascript:void(0)" onclick="move_page('work_list.php');">
 							<span>전체목록</span>
 						</a>
 					</div>
@@ -150,6 +150,9 @@ $(window).load(function() {
 	var pathName = location.pathname.split("/")[3].split(".")[0];
 	$body.addClass(pathName);
 
+	page_load();
+
+	setVideoSize();
 
 	menuBtn.on('click', function(e) {
 		e.stopPropagation();
@@ -236,8 +239,18 @@ $(window).load(function() {
 		}
 	}
 
-	// console.log($(window).scrollTop());
-	// console.log($('.work-block').height()/2);
+	function setVideoSize() {
+		var $iframeWidth = $('.mock-up > .inner > .video').width()+1;
+		var $iframeHeight = ($iframeWidth/16)*9;
+
+		$('.video iframe').css({
+			width: '100%',
+			height: $iframeHeight+'px',
+			visibility: 'visible',
+			opacity: 1
+		});
+	}
+
 
 });
 </script>
