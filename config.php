@@ -1,8 +1,4 @@
 <?php
-	//session_save_path($_SERVER['DOCUMENT_ROOT']."/session");
-	session_save_path($_SERVER['DOCUMENT_ROOT']."/miniver_new/session");
-	session_start();
-
 	header("Content-Type: text/html; charset=UTF-8");
 	//환경설정 파일
 	include_once "include/global.php"; 				//변수정보

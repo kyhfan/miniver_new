@@ -13,7 +13,7 @@ function move_page(url)
 
 function page_load()
 {
-	$("#header").fadeIn(500, function(){
+	$("#header").fadeIn(300, function(){
 		$("#nav").fadeIn(300, function(){
 			//$(".content-outer").css("visibility","visible");
 			sort_work('all');		

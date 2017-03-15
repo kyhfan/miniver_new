@@ -2,20 +2,22 @@
 	include_once "head.php";
 ?>
 <body>
-	<div id="background-gate">
-		<div class="wrap-gate">
-			<div class="gate">
-				<div class="anim-elems">
-					<h1 class="title">
-						<img src="./images/gate_02.png" alt="MINIVERTISING">
-					</h1>
-					<div class="rotate">
-						<img src="./images/gate_01.png">
+	<div id="miniver_gate">
+		<div class="background-gate">
+			<div class="wrap-gate">
+				<div class="gate">
+					<div class="anim-elems">
+						<h1 class="title">
+							<img src="./images/gate_02.png" alt="MINIVERTISING">
+						</h1>
+						<div class="rotate">
+							<img src="./images/gate_01.png">
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="loading-bar">
-				<div class="fill"></div>
+				<div class="loading-bar">
+					<div class="fill"></div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -67,12 +69,12 @@
 
 		function endLoading() {
 			TweenMax.killTweensOf(".rotate");
-			TweenMax.to(".rotate, .title, .loading-bar", 2, {autoAlpha: 0, onComplete:page_start});
+			TweenMax.to(".rotate, .title, .loading-bar", 2, {opacity: 0, onComplete:page_start});
 		}
 
         function page_start()
         {
-            move_page('about.php');
+            move_page('work_list.php');
         }
 
 	});
