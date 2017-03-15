@@ -467,7 +467,7 @@ input[type="tel"] {
   display: inline-block;
   /*float: left;*/
   color: #ffffff;
-  font-family: Arial;
+  font-family: "Helvetica Neue", Arial;
   font-size: 11px;
 }
 
@@ -564,7 +564,7 @@ input[type="tel"] {
 }
 
 .block-work-list .work-block .circle-thumb .wrap-category .cate-name span {
-  font-family: Arial;
+  font-family: "Helvetica Neue", Arial;
   color: #959595;
   font-weight: bold;
   font-size: 11px;
@@ -591,7 +591,7 @@ input[type="tel"] {
 
 .block-work-list .work-block .desc-zone .guide span {
   font-size: 10px;
-  font-family: Arial;
+  font-family: "Helvetica Neue", Arial;
   font-weight: bold;
   color: #a19d9d;
   text-transform: uppercase;
@@ -744,7 +744,7 @@ input[type="tel"] {
 
 .desc-block .row-block .row .guide {
   font-weight: bold;
-  font-family: Arial;
+  font-family: "Helvetica Neue", Arial;
   font-size: 12px;
   color: #434343;
 }
