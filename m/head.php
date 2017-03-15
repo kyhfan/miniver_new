@@ -9,6 +9,7 @@
 	<link href="../lib/swiper/swiper.min.css" rel="stylesheet" />
 	<link href="./css/m.style_mini.css" rel="stylesheet" />
 	<link href="../lib/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="../lib/bxslider/jquery.bxslider.css">
 	<script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script>
 	<script type="text/javascript" src="../lib/swiper/swiper.jquery.min.js"></script>
 	<script type="text/javascript" src="../js/modernizr-custom.js"></script>
