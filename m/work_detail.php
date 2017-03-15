@@ -1,5 +1,9 @@
 <?
 	include_once "head.php";
+
+	$idx    = $_REQUEST['idx'];
+    // 포트폴리오 정보
+    $portfolio_info     = select_portfolio_info($idx);
 ?>
 <body>
 	<div id="miniver">
@@ -7,32 +11,44 @@
 	include_once "header.php";
 ?>
 		<div class="content-outer">
-			<div class="content-inner descAndPhone">
+			<div class="content-inner video">
 				<div class="device-block">
 					<div class="inner">
 						<div class="layout">
 							<div class="push-line"></div>
 						</div>
-						<!-- <div class="wrap-text">
-							<div class="brand">
-								<span>더페이스샵 잉크젤스틱</span>
-							</div>
-							<div class="title">
-								<h3>'당신의 입술을 캐스팅합니다'</h3>
-							</div>
-						</div> -->
-						<!-- tablet  -->
 						<div class="wrap-text">
 							<div class="brand">
-								<span>한샘</span>
+								<span><?=$portfolio_info['project_company_name']?></span>
 							</div>
 							<div class="title">
-								<h3>'매장 가이드용 앱'</h3>
+								<h3>
+									'<?=$portfolio_info['project_name']?>'
+								</h3>
 							</div>
 						</div>
 						<div class="mock-up">
-							<!-- <img src="./images/tf_ink_01.png" alt=""> -->
-							<img src="./images/hs_tab_01.png" alt="">
+							<div class="inner">
+								<?
+								if($portfolio_info["template_gubun"] == "video") {
+								?>
+									<!-- video layout -->
+									<div class="video">
+										<?=$portfolio_info['m_main_image']?>
+										<!-- <img src="./images/video_sample.png" alt=""> -->
+									</div>
+									<!-- video layout -->
+								<?
+								}else{
+								?>
+								<!--  desc phone tablet layout -->
+									<!-- <img src="./images/tf_ink_01.png" alt=""> -->
+									<img src="<?=str_replace("../../../","../",$portfolio_info['m_main_image'])?>" alt="">
+								<!--  desc phone tablet layout -->
+								<?
+								}
+								?>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -43,7 +59,7 @@
 								Category :
 							</span>
 							<span class="adInput">
-								DIGITAL CAMPAIGN
+								<?=$portfolio_info['project_category']?>
 							</span>
 						</div>
 						<div class="row">
@@ -51,7 +67,7 @@
 								Client :
 							</span>
 							<span class="adInput">
-								THEFACESHOP
+								<?=$portfolio_info['project_client']?>
 							</span>
 						</div>
 					</div>
@@ -62,7 +78,7 @@
 							</div>
 							<div class="flow-text">
 								<p>
-									더페이스샵의 새로운 립스틱, 잉크젤스틱 런칭
+									<?=$portfolio_info['project_brand_issue']?>
 								</p>
 							</div>
 						</div>
@@ -72,32 +88,50 @@
 							</div>
 							<div class="flow-text">
 								<p>
-									새롭게 런칭한 잉크젤스틱, 수지라는 모델로 소구하기 보다 소비자들이 직접 입술 모델을
-									지원 할 수 있게 캠페인을 기획했습니다 남여 나이 불문, 단지 입술로 모델 모집을 하여
-									타겟들의 관심과 참여를 촉구하였습니다. 실제로 촬영된 일반인 모델 화보컷은 패션뷰티
-									잡지와 매장에서 마케팅 용도로 활용 되었습니다.
+									<?=$portfolio_info['project_creative']?>
 								</p>
 							</div>
 						</div>
 					</div>
+					<?
+					if($portfolio_info["template_gubun"] == "video") {
+					?>
+					<!-- video layout -->
+						<div class="capture-block">
+							<img src="<?=str_replace("../../../","../",$portfolio_info['m_middle_image1'])?>" alt="">
+							<!-- <img src="./images/tf_bag_02_01.png" alt=""> -->
+						</div>
+					<!-- video layout -->
+					<?
+					}else{
+					?>
+					<!--  desc phone tablet layout -->
 					<div class="papers">
 						<div class="paper _01 animate" data-animation-name="paperDrop">
-							<img src="./images/tf_ink_02_01.png" alt="">
+							<img src="<?=str_replace("../../../","../",$portfolio_info['m_middle_image3'])?>" alt="">
+							<!-- <img src="./images/tf_ink_02_01.png" alt=""> -->
 						</div>
 						<div class="paper _02 animate" data-animation-name="paperDrop">
-							<img src="./images/tf_ink_02_02.png" alt="">
+							<img src="<?=str_replace("../../../","../",$portfolio_info['m_middle_image2'])?>" alt="">
+							<!-- <img src="./images/tf_ink_02_02.png" alt=""> -->
 						</div>
 						<div class="paper _03 animate" data-animation-name="paperDrop">
-							<img src="./images/tf_ink_02_02.png" alt="">
+							<img src="<?=str_replace("../../../","../",$portfolio_info['m_middle_image1'])?>" alt="">
+							<!-- <img src="./images/tf_ink_02_02.png" alt=""> -->
 						</div>
 					</div>
+					<!--  desc phone tablet layout -->
+					<?
+					}
+					?>
 				</div>
 				<div class="spread-block">
 					<div class="spread-pages animate" data-animation-name="fadeInUp">
-						<img src="./images/tf_ink_03.png" alt="">
+						<!-- <img src="./images/tf_ink_03.png" alt=""> -->
+						<img src="<?=str_replace("../../../","../",$portfolio_info['web_image'])?>" alt="">
 					</div>
 					<div class="list-all">
-						<a href="#">
+						<a href="javascript:void(0)" onclick="move_page('work_list.php');">
 							<span>전체목록</span>
 						</a>
 					</div>
@@ -116,6 +150,9 @@ $(window).load(function() {
 	var pathName = location.pathname.split("/")[3].split(".")[0];
 	$body.addClass(pathName);
 
+	page_load();
+
+	setVideoSize();
 
 	menuBtn.on('click', function(e) {
 		e.stopPropagation();
@@ -202,8 +239,18 @@ $(window).load(function() {
 		}
 	}
 
-	// console.log($(window).scrollTop());
-	// console.log($('.work-block').height()/2);
+	function setVideoSize() {
+		var $iframeWidth = $('.mock-up > .inner > .video').width()+1;
+		var $iframeHeight = ($iframeWidth/16)*9;
+
+		$('.video iframe').css({
+			width: '100%',
+			height: $iframeHeight+'px',
+			visibility: 'visible',
+			opacity: 1
+		});
+	}
+
 
 });
 </script>

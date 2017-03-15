@@ -53,106 +53,65 @@
 			</div>
 		</div>
 		<div class="content-outer">
-			<div class="content-inner video">
-				<div class="device-block">
-					<div class="inner">
-						<div class="layout">
-							<div class="push-line"></div>
+			<div class="content-inner">
+				<div class="wrapper-contactUs">
+					<div class="wrapper">
+						<div class="title">
+							<img src="./images/contact_us_title.png" alt="">
 						</div>
-						<div class="wrap-text">
-							<div class="brand">
-								<span>더페이스샵 잉크젤스틱</span>
-							</div>
-							<div class="title">
-								<h3>'당신의 입술을 캐스팅합니다'</h3>
-							</div>
+						<div class="sub">
+							<p>
+								귀사의 브랜드로 좋은 캠페인을 만드는 일 만큼은<br>
+								결코 양보할 수 없는 미니버타이징의 가치입니다
+							</p>
 						</div>
-						<div class="mock-up">
-							<div class="inner">
-								<!--  desc phone tablet layout -->
-								<!-- <img src="./images/tf_ink_01.png" alt=""> -->
-								<!--  desc phone tablet layout -->
-								<!-- video layout -->
-									<div class="video">
-										<img src="./images/video_sample.png" alt="">
-									</div>
-								<!-- video layout -->
-							</div>
+						<div class="address-zone">
+							<p class="corp">MINIVERTISING Corp.</p>
+							<p>OFFICE.  2F 931-9, Bangbae-dong, Seocho-gu Seoul</p>
+							<p>서울시 서초구 방배동 931-9, 2층</p>
+							<p>TEL. 02 532 2475, FAX. 02 532 2493</p>
+							<p>FB. www.facebook.com/minivertising</p>
 						</div>
-					</div>
-				</div>
-				<div class="desc-block">
-					<div class="row-block">
-						<div class="row">
-							<span class="guide">
-								Category :
-							</span>
-							<span class="adInput">
-								DIGITAL CAMPAIGN
-							</span>
+						<div class="swap-button">
+							<a href="javascript:void(0)">
+								<span class="map">MAP</span>
+							</a>
 						</div>
-						<div class="row">
-							<span class="guide">
-								Client :
-							</span>
-							<span class="adInput">
-								THEFACESHOP
-							</span>
-						</div>
-					</div>
-					<div class="box-block">
-						<div class="box">
-							<div class="title">
-								<span>brand issue</span>
+						<div class="wrap-swap-content">
+							<div class="block-send">
+								<div class="row">
+									<input type="text" placeholder="브랜드 / 회사명">
+								</div>
+								<div class="row">
+									<input type="text" placeholder="담당자 성함">
+								</div>
+								<div class="row">
+									<input type="tel" placeholder="연락처">
+								</div>
+								<div class="row last">
+									<input type="text" placeholder="이메일">
+								</div>
+								<div class="textBox">
+									<textarea rows="8" cols="80" placeholder="의뢰 내용"></textarea>
+								</div>
+								<div class="sendIcon">
+									<span>SEND</span>
+								</div>
 							</div>
-							<div class="flow-text">
-								<p>
-									더페이스샵의 새로운 립스틱, 잉크젤스틱 런칭
-								</p>
-							</div>
-						</div>
-						<div class="box">
-							<div class="title">
-								<span>creative</span>
-							</div>
-							<div class="flow-text">
-								<p>
-									새롭게 런칭한 잉크젤스틱, 수지라는 모델로 소구하기 보다 소비자들이 직접 입술 모델을
-									지원 할 수 있게 캠페인을 기획했습니다 남여 나이 불문, 단지 입술로 모델 모집을 하여
-									타겟들의 관심과 참여를 촉구하였습니다. 실제로 촬영된 일반인 모델 화보컷은 패션뷰티
-									잡지와 매장에서 마케팅 용도로 활용 되었습니다.
-								</p>
+							<div class="block-map">
+								<div class="map">
+									<img src="./images/temp_map.png" alt="">
+								</div>
+								<div class="desc">
+									<p>
+										- 지하철 7호선 내방역 4번 출구 (도보 10분 소요)
+									</p>
+									<p>
+										- 2호선 방배역 3번 출구 (도보 12분 소요)
+									</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<!--  desc phone tablet layout -->
-					<!-- <div class="papers">
-						<div class="paper _01 animate" data-animation-name="paperDrop">
-							<img src="./images/tf_ink_02_01.png" alt="">
-						</div>
-						<div class="paper _02 animate" data-animation-name="paperDrop">
-							<img src="./images/tf_ink_02_02.png" alt="">
-						</div>
-						<div class="paper _03 animate" data-animation-name="paperDrop">
-							<img src="./images/tf_ink_02_02.png" alt="">
-						</div>
-					</div> -->
-					<!--  desc phone tablet layout -->
-					<!-- video layout -->
-						<div class="capture-block">
-							<img src="./images/tf_bag_02_01.png" alt="">
-						</div>
-					<!-- video layout -->
-				</div>
-				<div class="spread-block">
-					<div class="spread-pages animate" data-animation-name="fadeInUp">
-						<!-- <img src="./images/tf_ink_03.png" alt=""> -->
-						<img src="./images/hansam_03.png" alt="">
-					</div>
-					<div class="list-all">
-						<a href="#">
-							<span>전체목록</span>
-						</a>
 					</div>
 				</div>
 			</div>
@@ -254,6 +213,34 @@ $(window).load(function() {
 			return false;
 		}
 	}
+
+	$('.swap-button a').off().on('click', function(e) {
+		e.preventDefault();
+		e.stopPropagation();
+		var $icon = $(this).children();
+		if($icon.text() == "MAP") {
+			$('.block-send').fadeOut(500, function(){
+				$('.block-map').fadeIn(500, function(){
+					$icon.fadeOut(100, function(){
+						$(this).text("BACK").fadeIn();
+					});
+					$icon.removeClass("map").addClass('back');
+				});
+			});
+		}else if($icon.text() == "BACK"){
+			$('.block-map').fadeOut(500, function(){
+				$('.block-send').fadeIn(500, function(){
+					$icon.fadeOut(100, function(){
+						$(this).text("MAP").fadeIn();
+					});
+					$icon.removeClass("back").addClass('map');
+				});
+			});
+		}else{
+			return false;
+		}
+	});
+
 
 	// console.log($(window).scrollTop());
 	// console.log($('.work-block').height()/2);

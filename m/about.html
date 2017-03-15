@@ -53,106 +53,59 @@
 			</div>
 		</div>
 		<div class="content-outer">
-			<div class="content-inner video">
-				<div class="device-block">
-					<div class="inner">
-						<div class="layout">
-							<div class="push-line"></div>
-						</div>
-						<div class="wrap-text">
-							<div class="brand">
-								<span>더페이스샵 잉크젤스틱</span>
-							</div>
-							<div class="title">
-								<h3>'당신의 입술을 캐스팅합니다'</h3>
-							</div>
-						</div>
-						<div class="mock-up">
-							<div class="inner">
-								<!--  desc phone tablet layout -->
-								<!-- <img src="./images/tf_ink_01.png" alt=""> -->
-								<!--  desc phone tablet layout -->
-								<!-- video layout -->
-									<div class="video">
-										<img src="./images/video_sample.png" alt="">
+			<div class="content-inner">
+				<div class="wrapper-about">
+					<div class="parent-vertical">
+						<div class="child-vertical">
+							<div class="slide-wrapper">
+								<div class="slide _01">
+									<div class="wrap-inner">
+										<div class="title">
+											<img src="./images/slider_01_title.png" alt="">
+										</div>
+										<div class="sub">
+											작을 수록 크리에이티브는 날카로워 집니다<br>
+											그래서 때론 크다고 표현합니다<br>
+											비본질적인 것을 덜어내다보니 작아졌습니다 독창적입니다<br>
+											작은 즐거움 모여, 브랜드를 세상을 변화시킵니다
+										</div>
 									</div>
-								<!-- video layout -->
+								</div>
+								<div class="slide _02">
+									<div class="wrap-inner">
+										<div class="title">
+											<img src="./images/slider_02_title.png" alt="">
+										</div>
+										<div class="sub">
+											크기가 아닌 핵심을 이야기하는 것
+										</div>
+									</div>
+								</div>
+								<div class="slide _03">
+									<div class="wrap-inner">
+										<div class="title">
+											<img src="./images/slider_03_title.png" alt="">
+										</div>
+										<div class="sub">
+											하나의 아이디어를 두고 프레임부터 다양하게 접근합니다<br>
+											디자인팀과 콘텐츠팀, 바이럴 무비팀, 개발팀이<br>
+											유기적으로 컨버전스 되어 아이디어가 필요한 형태로<br>
+											각 매체에 적합한 콘텐츠를 제작합니다<br>
+											우리가 만드는 것은 새로움이지만<br>
+											소비자가 기억하는 것은 브랜드와 즐거움일 것입니다
+										</div>
+									</div>
+								</div>
+								<div class="background">
+									<img src="./images/slider_background.png" alt="">
+								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class="desc-block">
-					<div class="row-block">
-						<div class="row">
-							<span class="guide">
-								Category :
-							</span>
-							<span class="adInput">
-								DIGITAL CAMPAIGN
-							</span>
+						<div class="pager">
+									<span></span>
+									<span></span>
+									<span></span>
 						</div>
-						<div class="row">
-							<span class="guide">
-								Client :
-							</span>
-							<span class="adInput">
-								THEFACESHOP
-							</span>
-						</div>
-					</div>
-					<div class="box-block">
-						<div class="box">
-							<div class="title">
-								<span>brand issue</span>
-							</div>
-							<div class="flow-text">
-								<p>
-									더페이스샵의 새로운 립스틱, 잉크젤스틱 런칭
-								</p>
-							</div>
-						</div>
-						<div class="box">
-							<div class="title">
-								<span>creative</span>
-							</div>
-							<div class="flow-text">
-								<p>
-									새롭게 런칭한 잉크젤스틱, 수지라는 모델로 소구하기 보다 소비자들이 직접 입술 모델을
-									지원 할 수 있게 캠페인을 기획했습니다 남여 나이 불문, 단지 입술로 모델 모집을 하여
-									타겟들의 관심과 참여를 촉구하였습니다. 실제로 촬영된 일반인 모델 화보컷은 패션뷰티
-									잡지와 매장에서 마케팅 용도로 활용 되었습니다.
-								</p>
-							</div>
-						</div>
-					</div>
-					<!--  desc phone tablet layout -->
-					<!-- <div class="papers">
-						<div class="paper _01 animate" data-animation-name="paperDrop">
-							<img src="./images/tf_ink_02_01.png" alt="">
-						</div>
-						<div class="paper _02 animate" data-animation-name="paperDrop">
-							<img src="./images/tf_ink_02_02.png" alt="">
-						</div>
-						<div class="paper _03 animate" data-animation-name="paperDrop">
-							<img src="./images/tf_ink_02_02.png" alt="">
-						</div>
-					</div> -->
-					<!--  desc phone tablet layout -->
-					<!-- video layout -->
-						<div class="capture-block">
-							<img src="./images/tf_bag_02_01.png" alt="">
-						</div>
-					<!-- video layout -->
-				</div>
-				<div class="spread-block">
-					<div class="spread-pages animate" data-animation-name="fadeInUp">
-						<!-- <img src="./images/tf_ink_03.png" alt=""> -->
-						<img src="./images/hansam_03.png" alt="">
-					</div>
-					<div class="list-all">
-						<a href="#">
-							<span>전체목록</span>
-						</a>
 					</div>
 				</div>
 			</div>
@@ -240,23 +193,6 @@ $(window).load(function() {
 
 		}
 	}
-
-	function paperAnimation(cnt, point) {
-		if(cnt>0) {
-			TweenMax.to('.paper._0'+cnt, 2, {autoAlpha: 1, y:point});
-			cnt--;
-			point = point-30;
-			setTimeout(function() {
-				paperAnimation(cnt, point);
-			}, 1000);
-			// paperAnimation(cnt);
-		} else {
-			return false;
-		}
-	}
-
-	// console.log($(window).scrollTop());
-	// console.log($('.work-block').height()/2);
 
 });
 </script>
