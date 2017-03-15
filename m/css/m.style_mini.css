@@ -1158,7 +1158,7 @@ input[type="tel"] {
   display: table-cell;
   vertical-align: middle;
   position: relative;
-  padding-bottom: 13%;
+  /*padding-bottom: 13%;*/
 }
 
 .wrapper-about .parent-vertical .slide-wrapper {
