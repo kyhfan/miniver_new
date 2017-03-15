@@ -15,7 +15,6 @@ function page_load()
 {
 	$(".header").fadeIn(300, function(){
 		//$(".content-outer").css("visibility","visible");
-		sort_work('all');
 		TweenMax.to($('.content-outer'), 0.65, {css:{opacity:1}});
 	});
 

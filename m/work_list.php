@@ -62,6 +62,8 @@ $(window).load(function() {
 	var windowBottom = $(window).height();
 
     page_load();
+	sort_work('all');
+
 
 	menuBtn.on('click', function(e) {
 		e.stopPropagation();
