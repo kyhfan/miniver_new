@@ -271,7 +271,7 @@
 	$(window).load(function() {
 		page_load();
 
-		var pathName = location.pathname.split("/")[2].split(".")[0];
+		var pathName = location.pathname.split("/")[1].split(".")[0];
 		$body.addClass(pathName);
 		TweenMax.to('.txt-layout', 2, {opacity: 1});
 
