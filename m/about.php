@@ -72,7 +72,7 @@
 	$(window).load(function() {
 		var $body = $('body');
 		var menuBtn = $('.nav');
-		var pathName = location.pathname.split("/")[3].split(".")[0];
+		var pathName = location.pathname.split("/")[2].split(".")[0];
 		$body.addClass(pathName);
 
 		var slider_width = $(window).width() * 0.887;
