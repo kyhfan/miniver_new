@@ -1,5 +1,9 @@
 <?
 	include_once "../config.php";
+
+	if ($gubun == "PC")
+		echo "<script>location.href='../".basename($_SERVER['PHP_SELF'])."?".$_SERVER['QUERY_STRING']."';</script>"
+
 ?>
 <html>
 <head>

@@ -142,7 +142,7 @@
 				<div class="spread-block">
 					<div class="spread-pages animate" data-animation-name="fadeInUp">
 						<!-- <img src="./images/tf_ink_03.png" alt=""> -->
-						<img src="<?=str_replace("../../../","../",$portfolio_info['web_image'])?>" alt="">
+						<img src="<?=str_replace("../../../","../",$portfolio_info['m_web_image'])?>" alt="">
 					</div>
 					<div class="list-all">
 						<a href="javascript:void(0)" onclick="move_page('work_list.php');">

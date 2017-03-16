@@ -1,5 +1,8 @@
 <?
 	include_once "config.php";
+
+	if ($gubun == "MOBILE")
+		echo "<script>location.href='./m/".basename($_SERVER['PHP_SELF'])."?".$_SERVER['QUERY_STRING']."';</script>"
 ?>
 <!DOCTYPE html>
 <html class="no-js">
