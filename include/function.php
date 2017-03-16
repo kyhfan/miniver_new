@@ -25,6 +25,18 @@ function highlight_navi($pg)
 	return $flag;	
 }
 
+function highlight_m_navi($pg)
+{
+	$str_match 	= strpos($_SERVER["PHP_SELF"], $pg);
+
+	if ($str_match === false)
+		$flag 	= "";
+	else
+		$flag 	= "current";
+
+	return $flag;	
+}
+
 function select_portfolio_info($idx)
 {
 	global $_gl;
