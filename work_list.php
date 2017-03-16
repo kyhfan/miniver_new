@@ -27,7 +27,7 @@
 		// var path = location.pathname;
 		// var pathName = path.split("/");
 		// console.log(pathName[2].split(".")[0]);
-		var pathName = location.pathname.split("/")[2].split(".")[0];
+		var pathName = location.pathname.split("/")[1].split(".")[0];
 		$body.addClass(pathName);
 		// TweenMax.set('.txt-layout', {opacity: 0});
 		TweenMax.to('.txt-layout', 2, {opacity: 1});
