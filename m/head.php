@@ -14,10 +14,10 @@
 	<meta name="keywords" content="" />
 	<meta property="og:title" content="MINIVERTISING" />
 	<meta property="og:type" content="website" />
-	<meta property="og:image" content="http://minivertising.kr/images/miniver_main.jpg" />
+	<meta property="og:image" content="http://minivertising.kr/miniver_new/images/miniver_main.jpg" />
 	<meta property="og:site_name" content="MINIVERTISING" />
 	<meta property="og:description" content="작지만 큰 아이디어. 본질을 추구합니다. 디지털광고대행사 미니버타이징" />
-	<link rel="shortcut icon" type="image/x-icon" href="http://minivertising.kr/images/favicon.ico" />
+	<link rel="shortcut icon" type="image/x-icon" href="http://minivertising.kr/miniver_new/images/favicon.ico" />
 	<link href="../css/normalize.css" rel="stylesheet" />
 	<link href="../lib/swiper/swiper.min.css" rel="stylesheet" />
 	<link href="./css/m.style_mini.css" rel="stylesheet" />
