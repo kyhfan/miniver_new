@@ -1,8 +1,8 @@
 <?
 	include_once "../config.php";
 
-	if ($gubun == "MOBILE")
-		echo "<script>location.href='./m".$_SERVER['REQUEST_URI']."';</script>"
+	if ($gubun == "PC")
+		echo "<script>location.href='../".$_SERVER['REQUEST_URI']."';</script>"
 
 ?>
 <html>
