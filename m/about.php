@@ -72,7 +72,7 @@
 	$(".slide-wrapper").width(slider_width);
 	$(".slide-wrapper").height($(".background").height());
 
-	$(document).ready(function() {
+	$(window).load(function() {
 		var $body = $('body');
 		var menuBtn = $('.nav');
 		var pathName = location.pathname.split("/")[3].split(".")[0];

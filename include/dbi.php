@@ -5,7 +5,7 @@
 *
 */
 //	$my_db = new mysqli("localhost", "root", "7alslqjxkdlwld@%*)1590", "miniver");
-	 //$my_db = new mysqli("localhost", "root", "miniver_2017", "miniver_home");
+	// $my_db = new mysqli("localhost", "root", "miniver_2017", "miniver_home");
 	$my_db = new mysqli("localhost", "minivertising", "alslqj~1", "minivertising");
 	//$my_db = new mysqli("localhost", "miniver", "miniver_2016", "miniver_home");
 	// $my_db = new mysqli("localhost", "miniver", "miniver_2016", "miniver_home");
