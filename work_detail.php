@@ -14,12 +14,12 @@
 	include_once "contact.php";
 	// 상단 햄버그 메뉴
 	include_once "navi_w.php";
-?>		
+?>
 		<div class="content-outer">
 <?
     if ($portfolio_info["template_gubun"] == "web")
     {
-?>            
+?>
 			<div class="content-inner workdetail descAndPhone">
 				<div class="device-block">
 					<div class="layout"></div>
@@ -35,15 +35,29 @@
 				</div>
 				<div class="desc-block clearfix">
 					<div class="papers">
+						<?
+						if($portfolio_info['middle_image1'] != "") {
+						?>
 						<div class="paper _01 animate" data-animation-name="paperDrop">
-							<img src="<?=str_replace("../../../","",$portfolio_info['middle_image3'])?>" alt="">
+							<img src="<?=str_replace("../../../","",$portfolio_info['middle_image1'])?>" alt="">
 						</div>
+						<?
+						}
+						if($portfolio_info['middle_image2'] != "") {
+						?>
 						<div class="paper _02 animate" data-animation-name="paperDrop">
 							<img src="<?=str_replace("../../../","",$portfolio_info['middle_image2'])?>" alt="">
 						</div>
+						<?
+						}
+						if($portfolio_info['middle_image3'] != "") {
+						?>
 						<div class="paper _03 animate" data-animation-name="paperDrop">
-							<img src="<?=str_replace("../../../","",$portfolio_info['middle_image1'])?>" alt="">
+							<img src="<?=str_replace("../../../","",$portfolio_info['middle_image3'])?>" alt="">
 						</div>
+						<?
+						}
+						?>
 					</div>
 					<div class="desc animate" data-animation-name="fadeInUp">
 						<div class="row category">
@@ -91,7 +105,7 @@
 			</div>
 <?
     }else if ($portfolio_info["template_gubun"] == "tablet"){
-?>            
+?>
 			<div class="content-inner workdetail descAndTablet">
 				<div class="device-block">
 					<div class="layout"></div>
@@ -107,15 +121,29 @@
 				</div>
 				<div class="desc-block clearfix">
 					<div class="papers">
+						<?
+						if($portfolio_info['middle_image1'] != "") {
+						?>
 						<div class="paper _01 animate" data-animation-name="paperDrop">
-							<img src="<?=str_replace("../../../","",$portfolio_info['middle_image3'])?>" alt="">
+							<img src="<?=str_replace("../../../","",$portfolio_info['middle_image1'])?>" alt="">
 						</div>
+						<?
+						}
+						if($portfolio_info['middle_image2'] != "") {
+						?>
 						<div class="paper _02 animate" data-animation-name="paperDrop">
 							<img src="<?=str_replace("../../../","",$portfolio_info['middle_image2'])?>" alt="">
 						</div>
+						<?
+						}
+						if($portfolio_info['middle_image3'] != "") {
+						?>
 						<div class="paper _03 animate" data-animation-name="paperDrop">
-							<img src="<?=str_replace("../../../","",$portfolio_info['middle_image1'])?>" alt="">
+							<img src="<?=str_replace("../../../","",$portfolio_info['middle_image3'])?>" alt="">
 						</div>
+						<?
+						}
+						?>
 					</div>
 					<div class="desc animate" data-animation-name="fadeInUp">
 						<div class="row category">
@@ -163,7 +191,7 @@
 			</div>
 <?
     }else if ($portfolio_info["template_gubun"] == "video"){
-?>            
+?>
 			<div class="content-inner workdetail descAndPhone video">
 				<div class="device-block">
 					<div class="layout"></div>
@@ -229,7 +257,7 @@
 			</div>
 <?
     }
-?>            
+?>
 		</div>
 	</div>
 <script type="text/javascript">
@@ -241,7 +269,7 @@
 
 
 	$(window).load(function() {
-		page_load();       
+		page_load();
 
 		var pathName = location.pathname.split("/")[2].split(".")[0];
 		$body.addClass(pathName);

@@ -792,6 +792,7 @@ input[type="tel"] {
   position: relative;
   top: -30px;
   min-height: 200px; /* 임시 추가 */
+  margin-bottom: 6%;
 }
 
 .desc-block .papers .paper {
