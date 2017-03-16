@@ -107,18 +107,32 @@
 					?>
 					<!--  desc phone tablet layout -->
 					<div class="papers">
+						<?
+						if($portfolio_info['m_middle_image1'] != "") {
+						?>
 						<div class="paper _01 animate" data-animation-name="paperDrop">
-							<img src="<?=str_replace("../../../","../",$portfolio_info['m_middle_image3'])?>" alt="">
+							<img src="<?=str_replace("../../../","../",$portfolio_info['m_middle_image1'])?>" alt="">
 							<!-- <img src="./images/tf_ink_02_01.png" alt=""> -->
 						</div>
+						<?
+						}
+						if($portfolio_info['m_middle_image2'] != "") {
+						?>
 						<div class="paper _02 animate" data-animation-name="paperDrop">
 							<img src="<?=str_replace("../../../","../",$portfolio_info['m_middle_image2'])?>" alt="">
 							<!-- <img src="./images/tf_ink_02_02.png" alt=""> -->
 						</div>
+						<?
+						}
+						if($portfolio_info['m_middle_image3'] != "") {
+						?>
 						<div class="paper _03 animate" data-animation-name="paperDrop">
-							<img src="<?=str_replace("../../../","../",$portfolio_info['m_middle_image1'])?>" alt="">
+							<img src="<?=str_replace("../../../","../",$portfolio_info['m_middle_image3'])?>" alt="">
 							<!-- <img src="./images/tf_ink_02_02.png" alt=""> -->
 						</div>
+						<?
+						}
+						?>
 					</div>
 					<!--  desc phone tablet layout -->
 					<?
