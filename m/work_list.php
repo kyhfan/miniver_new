@@ -61,7 +61,7 @@ $(window).load(function() {
 	var scrolled = false;
 	var windowBottom = $(window).height();
 	var pathName = location.pathname.split("/")[3].split(".")[0];
-	
+
 	$body.addClass(pathName);
 
 	page_load();

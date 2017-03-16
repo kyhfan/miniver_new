@@ -274,8 +274,6 @@
 		var pathName = location.pathname.split("/")[2].split(".")[0];
 		$body.addClass(pathName);
 		TweenMax.to('.txt-layout', 2, {opacity: 1});
-		$('.category-box .bl').bind('transitionend', function() {
-		});
 
 
 
@@ -307,7 +305,7 @@
 				break;
 				case "paperDrop":
 					var paperCount = $('.paper').length;
-					var movePoint = (paperCount-1)*45;
+					var movePoint = (paperCount)*30;
 					paperAnimation(paperCount, movePoint);
 				break;
 				default:
@@ -320,7 +318,7 @@
 			if(cnt>0) {
 				TweenMax.to('.paper._0'+cnt, 2, {opacity: 1, y:point});
 				cnt--;
-				point = point-45;
+				point = point-30;
 				setTimeout(function() {
 					paperAnimation(cnt, point);
 				}, 1000);
