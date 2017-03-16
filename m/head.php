@@ -12,6 +12,7 @@
 	<meta name="description" content="작지만 큰 아이디어. 본질을 추구합니다. 디지털광고대행사 미니버타이징" />
 	<meta name="title" content="미니버타이징" />
 	<meta name="keywords" content="" />
+	<meta name="url" content="http://minivertising.kr/miniver_new/index.php" />
 	<meta property="og:title" content="MINIVERTISING" />
 	<meta property="og:type" content="website" />
 	<meta property="og:image" content="http://minivertising.kr/miniver_new/images/miniver_main.jpg" />

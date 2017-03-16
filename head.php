@@ -12,6 +12,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="description" content="작지만 큰 아이디어. 본질을 추구합니다. 디지털광고대행사 미니버타이징" />
 	<meta name="title" content="미니버타이징" />
+	<meta name="url" content="http://minivertising.kr/miniver_new/index.php" />
 	<meta name="keywords" content="" />
 	<meta property="og:title" content="MINIVERTISING" />
 	<meta property="og:type" content="website" />
