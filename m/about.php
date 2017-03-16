@@ -68,15 +68,16 @@
 		</div>
 	</div>
 <script>
-	var slider_width = $(window).width() * 0.887;
-	$(".slide-wrapper").width(slider_width);
-	$(".slide-wrapper").height($(".background").height());
 
 	$(window).load(function() {
 		var $body = $('body');
 		var menuBtn = $('.nav');
 		var pathName = location.pathname.split("/")[3].split(".")[0];
 		$body.addClass(pathName);
+
+		var slider_width = $(window).width() * 0.887;
+		$(".slide-wrapper").width(slider_width);
+		$(".slide-wrapper").height($(".background").height());
 
 		var mySwiper = new Swiper ('.slide-wrapper', {
 			// Optional parameters
