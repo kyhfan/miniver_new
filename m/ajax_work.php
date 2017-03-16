@@ -12,7 +12,7 @@
     $i =1;
 	while ($list_data = mysqli_fetch_array($list_result))
 	{
-		$cover_image 	= str_replace("../../../","../",$list_data['cover_image']);
+		$cover_image 	= str_replace("../../../","../",$list_data['m_cover_image']);
         $work_cnt   = strlen($i);
         if ($work_cnt < 2)
             $work_num = "0".$i;
