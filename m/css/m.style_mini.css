@@ -1185,6 +1185,10 @@ input[type="tel"] {
   bottom: 0;
 }
 
+.wrapper-about .parent-vertical .slide-wrapper .slide {
+  z-index: 99;
+}
+
 .wrapper-about .parent-vertical .slide-wrapper ._01 .wrap-inner {
   padding-top: 27.5%;
   /*visibility: hidden;*/
