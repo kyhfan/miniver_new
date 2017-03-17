@@ -106,7 +106,7 @@ input[type="text"] {
     width: 60px;
     height: 100%;
     background: #2c2d2d;
-    z-index: 1001;
+    z-index: 1002;
     display: none; /*페이지 이동 코딩 */
 }
 
@@ -384,10 +384,12 @@ input[type="text"] {
 
 .layer-contact {
     position: absolute;
-    left: 60px;
+    /*left: 60px;*/
+    left: 0;
     top: 0;
     width: 0%;
     height: 100%;
+    /*margin-left: 60px;*/
     background: #000000;
     background: rgba(0,0,0,.9);
     -webkit-transition:width 1s ease-in-out, z-index 1s step-end;
@@ -437,9 +439,43 @@ input[type="text"] {
     z-index: 1001;
     -webkit-transition:width 1s ease-in-out;
     transition: width 1s ease-in-out;
+    position: relative;
 }
 
-.contactOpen .layer-contact .inner {
+.layer-contact .area-close {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.contactOpen .layer-contact .area-close .line {
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background: #ffffff;
+    top: 50%;
+    margin-top: -1px;
+    transition: background .25s ease-in-out;
+}
+
+.contactOpen .layer-contact .area-close .left {
+    transform: rotate(45deg);
+}
+
+.contactOpen .layer-contact .area-close .right {
+    transform: rotate(-45deg);
+}
+
+.contactOpen .layer-contact .area-close:hover .line {
+    background: #77fde5;
+}
+
+.contactOpen .layer-contact .inner,
+.contactOpen .layer-contact .area-close {
     opacity: 1;
     -webkit-transition:opacity 1s linear 1s;
     transition: opacity 1s linear 1s;

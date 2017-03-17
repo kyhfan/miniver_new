@@ -5,13 +5,11 @@
 					<img src="./images/header_logo.png" alt="MINIVERTISING">
 				</a>
 			</div>
-			<div class="contact-us">
-				<a href="contactUs">
+			<a href="contactUs" id="contactOpener">
+				<div class="contact-us">
 					<img src="./images/contact_us.png" alt="CONTACT US">
-					<!-- <i class="fa fa-angle-right first" aria-hidden="true"></i> -->
-					<!-- <i class="fa fa-angle-right second" aria-hidden="true"></i> -->
-				</a>
-			</div>
+				</div>
+			</a>
 			<div class="sns-elems">
 				<a href="https://www.facebook.com/minivertising" target="_blank" class="facebook"></a>
 				<a href="http://blog.naver.com/miniver_ysh" target="_blank" class="blog"></a>

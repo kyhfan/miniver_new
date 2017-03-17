@@ -175,7 +175,7 @@
 	var $body = $('body');
 	var menuBtn = $('#nav .wrap-btn');
 
-	$('.contact-us > a').on('click', function(e) {
+	$('#contactOpener').off().on('click', function(e) {
 		e.preventDefault();
 		$body.toggleClass('contactOpen');
 	});

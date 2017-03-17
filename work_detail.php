@@ -331,10 +331,15 @@
 
 	});
 
-	$('.contact-us > a').on('click', function(e) {
+	$('#contactOpener').off().on('click', function(e) {
 		e.preventDefault();
 		$body.toggleClass('contactOpen');
 	});
+	$('#contactCloser').off().on('click', function(e) {
+		e.preventDefault();
+		$body.removeClass('contactOpen');
+	});
+
 	menuBtn.on('click', function() {
 		$body.hasClass('menuOpen') ? menu.close() : menu.open();
 	});

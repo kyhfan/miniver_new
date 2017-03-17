@@ -1,5 +1,5 @@
 		<div class="layer-contact">
-			<div class="area-close">
+			<div class="area-close" id="contactCloser">
 				<div class="line left"></div>
 				<div class="line right"></div>
 			</div>
