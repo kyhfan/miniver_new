@@ -32,7 +32,7 @@
 		// TweenMax.set('.txt-layout', {opacity: 0});
 		TweenMax.to('.txt-layout', 2, {opacity: 1});
 
-		page_load();
+		page_load("sort");
 	});
 
 	$('#contactOpener').off().on('click', function(e) {

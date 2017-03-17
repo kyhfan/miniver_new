@@ -11,13 +11,13 @@ function move_page(url)
 	});
 }
 
-function page_load()
+function page_load(pagecheck)
 {
 	$("#header").fadeIn(150, function(){
 		$("#nav").fadeIn(100, function(){
-			//$(".content-outer").css("visibility","visible");
-			sort_work('all');
-			// TweenMax.to( $('.content-outer'), 0.65, {css:{opacity:1}});
+			if(pagecheck)
+				sort_work('all');
+
 			TweenMax.to( $('.content-outer'), 0.35, {css:{opacity:1}});
 		});
 	});
@@ -36,6 +36,7 @@ function sort_work(param)
 		},
 		success: function(response){
 			$(".wrap-work").html(response);
+			// TweenMax.fromTo($(".scale"), 0.7, {scale: 1.8}, {scale: 1});
 		}
 	});
 }

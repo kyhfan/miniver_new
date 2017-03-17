@@ -1076,6 +1076,7 @@ input[type="text"] {
     }
 }
 
+
 .worklist .category-box .line.tl {
     top: 0;
     left: 0;
@@ -1140,11 +1141,18 @@ input[type="text"] {
     color: #ffffff;
 }
 
-.worklist .category-box .txt-layout .cate a:hover {
+.worklist .category-box .txt-layout .cate span {
+    color: #ffffff;
+    font-size: 16px;
+    -webkit-transition: color .25s ease-in-out;
+    transition: color .15s ease-in-out;
+}
+
+.worklist .category-box .txt-layout .cate a:hover span {
     color: #77fde5;
 }
 
-.worklist .category-box .txt-layout .cate.active {
+.worklist .category-box .txt-layout .cate.active span {
     color: #77fde5;
 }
 
@@ -1154,13 +1162,12 @@ input[type="text"] {
 
 .worklist .category-box .txt-layout .cate {
     padding-bottom: 9px;
-    color: #ffffff;
-    font-size: 16px;
 }
 
 .worklist .category-box .txt-layout .cate:last-child {
     padding-bottom: 0;
 }
+
 
 .worklist .work-box > a > .inner {
     width: 100%;
@@ -1229,6 +1236,7 @@ input[type="text"] {
     text-align: center;
     -webkit-transition:all .7s ease-in-out;
     transition: all .7s ease-in-out;
+    overflow: hidden;
 }
 
 .worklist .work-box .wrap-els img {
@@ -1323,8 +1331,6 @@ input[type="text"] {
     /*background: #f4f2f2;*/
     background: #ececec;
 }
-
-
 
 
 .worklist .work-box > a > .inner > .push-line {
