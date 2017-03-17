@@ -425,7 +425,6 @@ input[type="text"] {
 .layer-contact .inner .block-desc .sub {
     font-size: 14px;
     color: #ffffff;
-    text-align: left;
     padding: 14px 0 20px;
 }
 
@@ -459,6 +458,35 @@ input[type="text"] {
     color: #ffffff;
     font-size: 13px;
 }
+
+.layer-contact .inner .block-desc .bottom .address .contact-fb {
+    display: inline-block;
+    position: relative;
+    -webkit-transition:all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.layer-contact .inner .block-desc .bottom .address .contact-fb:after {
+    content: "";
+    background: #77fed5;
+    width: 0;
+    height: 1px;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    -webkit-transition:all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.layer-contact .inner .block-desc .bottom .address .contact-fb:hover {
+    color: #77fde5;
+}
+
+.layer-contact .inner .block-desc .bottom .address .contact-fb:hover:after {
+    width: 100%;
+}
+
+
 
 .layer-contact .inner .block-desc .bottom .address .changeIcon {
     padding-top: 5px;
@@ -1250,6 +1278,7 @@ input[type="text"] {
 }
 
 .worklist .work-box a .inner {
+    -webkit-transition:background .15s linear !important;
     transition: background .15s linear !important;
 }
 

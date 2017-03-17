@@ -25,7 +25,7 @@
 
 		function init() {
 			TweenMax.from(".rotate", 2, {autoAlpha: 0, scale:0});
-			TweenMax.from(".title", 1, {autoAlpha: 0, delay: 2, onComplete:loading});
+			TweenMax.from(".title", 1, {autoAlpha: 0, delay: 2, onStart:loading});
 			TweenMax.from(".loading-bar", 3, {autoAlpha: 0});
 		}
 
@@ -34,7 +34,7 @@
 		function loading() {
 			load1();
 			function load1() {
-				TweenMax.to(".fill", 0.5, {width: '23%', delay:2, onComplete:load3});
+				TweenMax.to(".fill", 0.5, {width: '23%', delay:0.5, onComplete:load3});
 			}
 			function load2() {
 				// TweenMax.to(".fill", 0.5, {width: '25%', onComplete:load3});

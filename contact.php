@@ -23,7 +23,7 @@
 								OFFICE.  2F 931-9, Bangbae-dong, Seocho-gu Seoul<br>
 								서울시 서초구 방배동 931-9, 2층<br>
 								TEL. 02 532 2475,   FAX. 02 532 2493<br>
-								FB.  <a href="http://www.facebook.com/minivertising" target="_blank">www.facebook.com/minivertising</a>
+								FB.  <a class="contact-fb" href="http://www.facebook.com/minivertising" target="_blank">www.facebook.com/minivertising</a>
 							</p>
 							<div class="changeIcon">
 								<a href="javascript:void(0)">

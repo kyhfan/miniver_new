@@ -82,7 +82,7 @@ $(window).load(function() {
 	var $animateElem = $('.animate');
 	var currentBottom;
 
-	var pathName = location.pathname.split("/")[3].split(".")[0];
+	var pathName = location.pathname.split("/")[2].split(".")[0];
 	$body.addClass(pathName);
 
     page_load();
