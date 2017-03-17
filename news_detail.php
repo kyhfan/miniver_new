@@ -57,7 +57,7 @@
 	</div>
 <script type="text/javascript">
 	var $body = $('body');
-	var menuBtn = $('#nav');
+	var menuBtn = $('#nav .wrap-btn');
 	var currentBottom;
 	var $animateElem = $('.animate');
 	var $animateElemCnt = $animateElem.length;

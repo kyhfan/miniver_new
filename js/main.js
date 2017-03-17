@@ -6,9 +6,9 @@
 
 function move_page(url)
 {
-	$("body").fadeOut("slow",function(){
+	$("body").fadeOut(300,function(){
 		location.href 	= url;
-	})
+	});
 }
 
 function page_load()
