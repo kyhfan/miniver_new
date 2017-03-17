@@ -154,119 +154,117 @@
 		</div>
 	</div>
 <script>
-$(window).load(function() {
-	var $body = $('body');
-	var menuBtn = $('.nav');
-	var scrolled = false;
-	var $animateElem = $('.animate');
-	var currentBottom;
+	$(window).load(function() {
+		var $body = $('body');
+		var menuBtn = $('.nav');
+		var scrolled = false;
+		var $animateElem = $('.animate');
+		var currentBottom;
 
-	var pathName = location.pathname.split("/")[3].split(".")[0];
-	$body.addClass(pathName);
+		var pathName = location.pathname.split("/")[3].split(".")[0];
+		$body.addClass(pathName);
 
-	page_load();
+		page_load();
 
-	setVideoSize();
+		setVideoSize();
 
-	menuBtn.on('click', function(e) {
-		e.stopPropagation();
-		$body.hasClass('menuOpen') ? menu.close() : menu.open();
-	});
+		menuBtn.on('click', function(e) {
+			e.stopPropagation();
+			$body.hasClass('menuOpen') ? menu.close() : menu.open();
+		});
 
-	var menu = {
-		open: function() {
+		var menu = {
+			open: function() {
 
-			$body.addClass('menuOpen');
-			// TweenMax.staggerFromTo('.wrap-menu li', .75, {opacity: 0, scale:0}, {opacity: 1, scale: 1}, 0.25);
-			// $('.cross .nav-line:last-child').bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
-
-			// });
-			// $body.addClass('menuOpen');
-			TweenMax.staggerFromTo('.menu-layer .menu-list a', .35, {autoAlpha: 0, scale:0}, {autoAlpha: 1, scale: 1}, 0.25);
-			console.log("open in");
-		},
-		close: function() {
-			TweenMax.killTweensOf('.menu-layer .menu-list a');
-			TweenMax.staggerFromTo('.menu-layer .menu-list a', .35, {autoAlpha: 1, scale: 1}, {autoAlpha: 0, onComplete:hidden});
-			$body.removeClass('menuOpen');
-			// hidden();
-			// TweenMax.staggerFromTo('.wrap-menu li', .75, {opacity: 1, scale:1}, {opacity: 0, scale: 0, onComplete:hidden}, 0.25);
-			function hidden() {
+				$body.addClass('menuOpen');
+				TweenMax.staggerFromTo('.menu-layer .menu-list a', .35, {autoAlpha: 0, scale:0}, {autoAlpha: 1, scale: 1}, 0.25);
+			},
+			close: function() {
+				TweenMax.killTweensOf('.menu-layer .menu-list a');
+				TweenMax.staggerFromTo('.menu-layer .menu-list a', .35, {autoAlpha: 1, scale: 1}, {autoAlpha: 0, onComplete:hidden});
 				$body.removeClass('menuOpen');
+				function hidden() {
+					$body.removeClass('menuOpen');
+				}
+			},
+			move: function() {
+
 			}
-			console.log("close in");
-		},
-		move: function() {
-
 		}
-	}
 
-	$('.content-inner').scroll(function(e) {
-		e.preventDefault();
-		scrolled = true;
+		$('.content-inner').scroll(function(e) {
+			e.preventDefault();
+			scrolled = true;
+		});
+
+		setInterval(function() {
+			if(scrolled) {
+				hasScrolled();
+				scrolled = false;
+			}
+		}, 200);
+
+		function hasScrolled() {
+			currentBottom = $(window).height() + $(this).scrollTop();
+			$.each($animateElem, function() {
+				if(currentBottom >= ($(this).offset().top) && $(this).hasClass('animate')) {
+					animateTrigger($(this), $(this).data('animation-name'));
+					$(this).removeClass('animate').addClass('animated');
+				}
+			});
+		}
+
+		function animateTrigger(target, type) {
+			switch (type) {
+				case "fadeInUp":
+					TweenMax.fromTo(target, 1,{autoAlpha: 0, y:20}, {autoAlpha: 1, y:0});
+				break;
+				case "paperDrop":
+					var paperCount = $('.paper').length;
+					var movePoint = (paperCount)*30;
+					paperAnimation(paperCount, movePoint);
+				break;
+				default:
+				break;
+
+			}
+		}
+
+		function paperAnimation(cnt, point) {
+			if(cnt>0) {
+				TweenMax.to('.paper._0'+cnt, 2, {autoAlpha: 1, y:point});
+				cnt--;
+				point = point-30;
+				setTimeout(function() {
+					paperAnimation(cnt, point);
+				}, 1000);
+			} else {
+				return false;
+			}
+		}
+
+		function setVideoSize() {
+			var $iframeWidth = $('.mock-up > .inner > .video').width()+1;
+			var $iframeHeight = ($iframeWidth/16)*9;
+
+			$('.video iframe').css({
+				width: '100%',
+				height: $iframeHeight+'px',
+				visibility: 'visible',
+				opacity: 1
+			});
+		}
 	});
 
-	setInterval(function() {
-		if(scrolled) {
-			hasScrolled();
-			scrolled = false;
-		}
-	}, 200);
+</script>
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-	function hasScrolled() {
-		currentBottom = $(window).height() + $(this).scrollTop();
-		$.each($animateElem, function() {
-			if(currentBottom >= ($(this).offset().top) && $(this).hasClass('animate')) {
-				animateTrigger($(this), $(this).data('animation-name'));
-				$(this).removeClass('animate').addClass('animated');
-			}
-		});
-	}
-
-	function animateTrigger(target, type) {
-		switch (type) {
-			case "fadeInUp":
-				TweenMax.fromTo(target, 1,{autoAlpha: 0, y:20}, {autoAlpha: 1, y:0});
-			break;
-			case "paperDrop":
-				var paperCount = $('.paper').length;
-				var movePoint = (paperCount)*30;
-				paperAnimation(paperCount, movePoint);
-			break;
-			default:
-			break;
-
-		}
-	}
-
-	function paperAnimation(cnt, point) {
-		if(cnt>0) {
-			TweenMax.to('.paper._0'+cnt, 2, {autoAlpha: 1, y:point});
-			cnt--;
-			point = point-30;
-			setTimeout(function() {
-				paperAnimation(cnt, point);
-			}, 1000);
-			// paperAnimation(cnt);
-		} else {
-			return false;
-		}
-	}
-
-	function setVideoSize() {
-		var $iframeWidth = $('.mock-up > .inner > .video').width()+1;
-		var $iframeHeight = ($iframeWidth/16)*9;
-
-		$('.video iframe').css({
-			width: '100%',
-			height: $iframeHeight+'px',
-			visibility: 'visible',
-			opacity: 1
-		});
-	}
-
-
-});
+	ga('create', 'UA-93879621-1', 'auto');
+	ga('send', 'pageview');
 </script>
 </body>
 </html>
