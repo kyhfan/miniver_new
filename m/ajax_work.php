@@ -5,8 +5,12 @@
 
     if ($sort == "all")
 	    $list_query		= "SELECT * FROM ".$_gl['portfolio_info_table']." WHERE 1 AND showYN='Y' ORDER BY order_num ASC";
+		// query for local test
+		// $list_query		= "SELECT * FROM ".$_gl['portfolio_info_table']." WHERE 1 AND showYN='Y'";
     else
 	    $list_query		= "SELECT * FROM ".$_gl['portfolio_info_table']." WHERE 1 AND showYN='Y' AND project_category LIKE '%".$sort."%' ORDER BY order_num ASC";
+        // query for local test
+        // $list_query		= "SELECT * FROM ".$_gl['portfolio_info_table']." WHERE 1 AND showYN='Y' AND project_category LIKE '%".$sort."%'";
 
 	$list_result	= mysqli_query($my_db, $list_query);
     $i =1;
@@ -18,12 +22,12 @@
             $work_num = "0".$i;
         else
             $work_num = $i;
-        
+
         if ($i == 1)
             $in_view    = "in-view";
         else
             $in_view    = "";
-?>                    
+?>
 					<a href="javascript:void(0);" onclick="move_page('work_detail.php?idx=<?=$list_data['idx']?>');">
                         <div class="work-block <?=$in_view?>">
                             <div class="circle-thumb">
@@ -65,4 +69,4 @@
 <?
         $i++;
 	}
-?>					
+?>
