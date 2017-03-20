@@ -46,12 +46,8 @@
 <?
     if ($sort == "all")
 	    $list_query		= "SELECT * FROM ".$_gl['portfolio_info_table']." WHERE 1 AND showYN='Y' ORDER BY order_num ASC";
-		// query for local test
-	    // $list_query		= "SELECT * FROM ".$_gl['portfolio_info_table']." WHERE 1 AND showYN='Y'";
     else
 	    $list_query		= "SELECT * FROM ".$_gl['portfolio_info_table']." WHERE 1 AND showYN='Y' AND project_category LIKE '%".$sort."%' ORDER BY order_num ASC";
-		// query for local test
-		// $list_query		= "SELECT * FROM ".$_gl['portfolio_info_table']." WHERE 1 AND showYN='Y' AND project_category LIKE '%".$sort."%'";
 
 	$list_result	= mysqli_query($my_db, $list_query);
     $i =1;
