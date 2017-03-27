@@ -100,7 +100,7 @@
 			//$i	= 1;
 			while ($list_data = mysqli_fetch_array($list_result))
 			{
-				$innerHTML	.= "<tr>";
+				$innerHTML	.= "<tr onclick=location.href='portfolio_detail.php?idx=".$list_data['idx']."' style='cursor:pointer;'>";
 				$innerHTML	.= "<td>".$list_data['template_gubun']."</td>";
 				$innerHTML	.= "<td>".$list_data['webYN']."</td>";
 				$innerHTML	.= "<td>".$list_data['project_company_name']."</td>";
