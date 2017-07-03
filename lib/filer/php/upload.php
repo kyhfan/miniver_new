@@ -14,17 +14,21 @@
 		else if ($_REQUEST['num'] == "4")
 			$image_culumn 	= "middle_image3";
 		else if ($_REQUEST['num'] == "5")
-			$image_culumn 	= "web_image1";
+			$image_culumn 	= "web_image";
 		else if ($_REQUEST['num'] == "6")
-			$image_culumn 	= "web_image2";
+			$image_culumn 	= "m_cover_image";
 		else if ($_REQUEST['num'] == "7")
-			$image_culumn 	= "web_image3";
+			$image_culumn 	= "m_main_image";
 		else if ($_REQUEST['num'] == "8")
-			$image_culumn 	= "web_image4";
+			$image_culumn 	= "m_middle_image1";
 		else if ($_REQUEST['num'] == "9")
-			$image_culumn 	= "web_image5";
+			$image_culumn 	= "m_middle_image2";
 		else if ($_REQUEST['num'] == "10")
 			$image_culumn 	= "cover_image";
+		else if ($_REQUEST['num'] == "11")
+			$image_culumn 	= "m_middle_image3";
+		else if ($_REQUEST['num'] == "12")
+			$image_culumn 	= "m_web_image";
 		
 		$data = $uploader->upload($_FILES['files'], array(
 			'limit' => 10, //Maximum Limit of files. {null, Number}

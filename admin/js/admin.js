@@ -66,6 +66,12 @@ $(document).on("click", "#submit_btn", function(){
 		return false;
 	}
 
+	if (filer_input10 == "")
+	{
+		alert("프로젝트 커버 이미지를 선택해 주세요.");
+		return false;
+	}
+
 	if (filer_input1 == "")
 	{
 		alert("프로젝트 대표 이미지를 선택해 주세요.");
@@ -98,31 +104,37 @@ $(document).on("click", "#submit_btn", function(){
 
 	if (filer_input6 == "")
 	{
-		alert("프로젝트 웹 이미지를 선택해 주세요.");
+		alert("모바일 프로젝트 커버 이미지를 선택해 주세요.");
 		return false;
 	}
 
 	if (filer_input7 == "")
 	{
-		alert("프로젝트 웹 이미지를 선택해 주세요.");
+		alert("모바일 프로젝트 대표 이미지 선택해 주세요.");
 		return false;
 	}
 
 	if (filer_input8 == "")
 	{
-		alert("프로젝트 웹 이미지를 선택해 주세요.");
+		alert("모바일 프로젝트 중간 이미지1 선택해 주세요.");
 		return false;
 	}
 
 	if (filer_input9 == "")
 	{
-		alert("프로젝트 웹 이미지를 선택해 주세요.");
+		alert("모바일 프로젝트 중간 이미지2 선택해 주세요.");
 		return false;
 	}
 
-	if (filer_input10 == "")
+	if (filer_input11 == "")
 	{
-		alert("프로젝트 커버 이미지를 선택해 주세요.");
+		alert("모바일 프로젝트 중간 이미지3 선택해 주세요.");
+		return false;
+	}
+
+	if (filer_input12 == "")
+	{
+		alert("모바일 프로젝트 웹 이미지를 선택해 주세요.");
 		return false;
 	}
 
@@ -158,6 +170,8 @@ $(document).on("click", "#submit_btn", function(){
 				img_submit(8, serial_code);
 				img_submit(9, serial_code);
 				img_submit(10, serial_code);
+				img_submit(11, serial_code);
+				img_submit(12, serial_code);
 
 				alert("포트폴리오가 등록 되었습니다!");
 				location.reload();

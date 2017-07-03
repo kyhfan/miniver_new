@@ -126,7 +126,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>프로젝트 웹 이미지1</td>
+                  <td>프로젝트 웹 이미지</td>
                   <td colspan="2">
                     <form action="../../lib/filer/php/upload.php" id="img_frm5" method="post" enctype="multipart/form-data">
                       <input type="file" name="files[]" id="filer_input5">
@@ -135,7 +135,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>프로젝트 웹 이미지2</td>
+                  <td>모바일 프로젝트 커버 이미지</td>
                   <td colspan="2">
                     <form action="../../lib/filer/php/upload.php" id="img_frm6" method="post" enctype="multipart/form-data">
                       <input type="file" name="files[]" id="filer_input6">
@@ -144,7 +144,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>프로젝트 웹 이미지3</td>
+                  <td>모바일 프로젝트 대표 이미지</td>
                   <td colspan="2">
                     <form action="../../lib/filer/php/upload.php" id="img_frm7" method="post" enctype="multipart/form-data">
                       <input type="file" name="files[]" id="filer_input7">
@@ -153,7 +153,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>프로젝트 웹 이미지4</td>
+                  <td>모바일 프로젝트 중간 이미지1</td>
                   <td colspan="2">
                     <form action="../../lib/filer/php/upload.php" id="img_frm8" method="post" enctype="multipart/form-data">
                       <input type="file" name="files[]" id="filer_input8">
@@ -162,10 +162,28 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>프로젝트 웹 이미지5</td>
+                  <td>모바일 프로젝트 중간 이미지2</td>
                   <td colspan="2">
                     <form action="../../lib/filer/php/upload.php" id="img_frm9" method="post" enctype="multipart/form-data">
                       <input type="file" name="files[]" id="filer_input9">
+                      <!-- <input type="submit" value="Submit"> -->
+                    </form>
+                  </td>
+                </tr>
+                <tr>
+                  <td>모바일 프로젝트 중간 이미지3</td>
+                  <td colspan="2">
+                    <form action="../../lib/filer/php/upload.php" id="img_frm11" method="post" enctype="multipart/form-data">
+                      <input type="file" name="files[]" id="filer_input11">
+                      <!-- <input type="submit" value="Submit"> -->
+                    </form>
+                  </td>
+                </tr>
+                <tr>
+                  <td>모바일 프로젝트 웹 이미지</td>
+                  <td colspan="2">
+                    <form action="../../lib/filer/php/upload.php" id="img_frm12" method="post" enctype="multipart/form-data">
+                      <input type="file" name="files[]" id="filer_input12">
                       <!-- <input type="submit" value="Submit"> -->
                     </form>
                   </td>
@@ -221,7 +239,7 @@
 	$(document).ready(function() {
 	});
 
-  for (var i=1; i<=10; i++)
+  for (var i=1; i<=12; i++)
   {
     $('#filer_input'+i).filer({
       showThumbs: true,
