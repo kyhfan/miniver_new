@@ -140,10 +140,21 @@
 					?>
 				</div>
 				<div class="spread-block">
+					<?
+					if($portfolio_info["template_gubun"] == "video" && $portfolio_info["webYN"] == "N") {
+					?>
+					<div class="spread-pages no-webImg">
+						<div class="blank"></div>
+					</div>
+					<?
+					}else{
+					?>
 					<div class="spread-pages animate" data-animation-name="fadeInUp">
-						<!-- <img src="./images/tf_ink_03.png" alt=""> -->
 						<img src="<?=str_replace("../../../","../",$portfolio_info['m_web_image'])?>" alt="">
 					</div>
+					<?
+					}
+					?>
 					<div class="list-all">
 						<a href="javascript:void(0)" onclick="move_page('work_list.php');">
 							<span>전체목록</span>
