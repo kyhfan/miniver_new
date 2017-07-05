@@ -17,8 +17,8 @@
 ?>
 		<div class="content-outer">
 <?
-    if ($portfolio_info["template_gubun"] == "web")
-    {
+	if ($portfolio_info["template_gubun"] == "web")
+	{
 ?>
 			<div class="content-inner workdetail descAndPhone">
 				<div class="device-block">
@@ -74,7 +74,7 @@
 							</div>
 							<div class="sub">
 								<p>
-                                    <?=$portfolio_info['project_brand_issue']?>
+									<?=$portfolio_info['project_brand_issue']?>
 								</p>
 							</div>
 						</div>
@@ -104,7 +104,7 @@
 				</div>
 			</div>
 <?
-    }else if ($portfolio_info["template_gubun"] == "tablet"){
+	}else if ($portfolio_info["template_gubun"] == "tablet"){
 ?>
 			<div class="content-inner workdetail descAndTablet">
 				<div class="device-block">
@@ -190,7 +190,7 @@
 				</div>
 			</div>
 <?
-    }else if ($portfolio_info["template_gubun"] == "video"){
+	}else if ($portfolio_info["template_gubun"] == "video"){
 ?>
 			<div class="content-inner workdetail descAndPhone video">
 				<div class="device-block">
@@ -256,7 +256,7 @@
 				</div>
 			</div>
 <?
-    }
+	}
 ?>
 		</div>
 	</div>

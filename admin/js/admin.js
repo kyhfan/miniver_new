@@ -228,4 +228,3 @@ function show_contact_list(id)
 		}
 	});
 }
-
