@@ -57,4 +57,14 @@
 		margin-right: auto;
 	}
 	</style>
+<!-- Global site tag (gtag.js) - Google AdWords: 830739267 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-830739267"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-830739267');
+</script>
+	
 </head>
