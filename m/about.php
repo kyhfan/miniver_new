@@ -127,5 +127,21 @@
 	ga('create', 'UA-93879621-1', 'auto');
 	ga('send', 'pageview');
 </script>
+<!-- Google 리마케팅 태그 코드 -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 830727412;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/830727412/?guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
 </body>
 </html>
