@@ -856,9 +856,6 @@ input[type="tel"] {
   position: relative;
   width: 100%;
 }
-.spread-pages.no-webImg > .blank {
-  height: 80px;
-}
 
 .spread-block .spread-pages {
   text-align: center;
@@ -878,10 +875,6 @@ input[type="tel"] {
   left: 0;
   right: 0;
   bottom: 25%;
-}
-
-.spread-pages.no-webImg + .list-all {
-  bottom: 40%;
 }
 
 .spread-block .list-all span {

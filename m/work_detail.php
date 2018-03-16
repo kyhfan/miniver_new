@@ -140,21 +140,10 @@
 					?>
 				</div>
 				<div class="spread-block">
-					<?
-					if($portfolio_info["template_gubun"] == "video" && $portfolio_info["webYN"] == "N") {
-					?>
-					<div class="spread-pages no-webImg">
-						<div class="blank"></div>
-					</div>
-					<?
-					}else{
-					?>
 					<div class="spread-pages animate" data-animation-name="fadeInUp">
+						<!-- <img src="./images/tf_ink_03.png" alt=""> -->
 						<img src="<?=str_replace("../../../","../",$portfolio_info['m_web_image'])?>" alt="">
 					</div>
-					<?
-					}
-					?>
 					<div class="list-all">
 						<a href="javascript:void(0)" onclick="move_page('work_list.php');">
 							<span>전체목록</span>
@@ -268,6 +257,15 @@
 		}
 	});
 
+</script>
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-93879621-1', 'auto');
+	ga('send', 'pageview');
 </script>
 </body>
 </html>

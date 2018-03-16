@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maum__336x280</title>
+    <style>
+
+        .wrap { width: 336px; height: 280px; background: #ffffff; position: relative; overflow: hidden;}
+       
+        /*left line*/
+        @-webkit-keyframes bl_move {
+            from {height: : 0;}
+            to {height: : 280px;}
+        }
+        @keyframes bl_move {
+            from {height: 0;}
+            to {height: 280px;}
+        }
+
+        /* bottom line*/
+        @-webkit-keyframes bb_move {
+            from {width: : 0;}
+            to {width: : 336px;}
+        }
+        @keyframes bb_move {
+            from {width: 0;}
+            to {width: 336px;}
+        }
+
+        /* right line*/
+        @-webkit-keyframes br_move {
+            from {height: : 0px;}
+            to {height: : 280px;}
+        }
+        @keyframes br_move {
+            from {height: 0px;}
+            to {height: 280px;}
+        }
+        /* top line*/
+        @-webkit-keyframes bt_move {
+            from {width: : 0px;}
+            to {width: : 336px;}
+        }
+        @keyframes bt_move {
+            from {width: 0px;}
+            to {width: 336px;}
+        }
+
+        /* image motion 1 */
+        @-webkit-keyframes motion_1
+        {
+            0%{ opacity:0; transform: scale(1.2,1.2); }
+            20%{ opacity: 1;}
+            70% { opacity: 1;}
+            100% { opacity: 0; transform: scale(1,1);}
+        }
+        @-moz-keyframes motion_1 {
+            0%{ opacity:0; transform: scale(1.2,1.2); }
+            20%{ opacity: 1;}
+            70% { opacity: 1;}
+            100% { opacity: 0; transform: scale(1,1);}
+        }
+        @keyframes motion_1 {
+            0%{ opacity:0; transform: scale(1.2,1.2); }
+            20%{ opacity: 1;}
+            70% { opacity: 1;}
+            100% { opacity: 0; transform: scale(1,1);}
+        }
+
+        /* image motion 2 */
+        @-webkit-keyframes motion_2
+        {
+            0% {opacity: 0; }
+            30% {opacity:1}
+            70% {opacity:1;}
+            100% {opacity: 0;}
+        }
+        @-moz-keyframes motion_2 {
+            0% {opacity: 0;}
+            30% {opacity:1}
+            70% {opacity:1;}
+            100% {opacity: 0;}
+        }
+        @keyframes motion_2 {
+            0% {opacity: 0;}
+            30% {opacity:1}
+            70% {opacity:1;}
+            100% {opacity: 0;}
+        }
+
+        /* image motion 3 */
+        @-webkit-keyframes motion_3
+        {
+            0% {opacity: 0;}
+            30% {opacity:1}
+            70% {opacity:1;}
+            100% {opacity: 0;}
+        }
+        @-moz-keyframes motion_3 {
+            0% {opacity: 0;}
+            30% {opacity:1}
+            70% {opacity:1;}
+            100% {opacity: 0;}
+        }
+        @keyframes motion_3 {
+            0% {opacity: 0;}
+            30% {opacity:1}
+            70% {opacity:1;}
+            100% {opacity: 0;}
+        }
+
+        /* image motion 4 */
+        @-webkit-keyframes motion_4
+        {
+             0% {opacity: 0;}
+             30% {opacity:1}
+            100% {opacity: 1;}
+        }
+        @-moz-keyframes motion_4 {
+             0% {opacity: 0;}
+             30% {opacity:1}
+            100% {opacity: 1;}
+        }
+        @keyframes motion_4 {
+            0% {opacity: 0;}
+            30% {opacity:1}
+            100% {opacity: 1;}
+        }
+
+        /* image motion 5 - robot hand */
+        @-webkit-keyframes motion_5
+        {
+            0% {opacity: 0;}
+            30% {opacity:1}
+            70% {opacity:1;}
+            100% {opacity: 0;}
+        }
+        @-moz-keyframes motion_5 {
+            0% {opacity: 0;}
+            30% {opacity:1}
+            70% {opacity:1;}
+            100% {opacity: 0;}
+        }
+        @keyframes motion_5 {
+        	
+            0% {opacity: 0;transform:translateX(-50px)}
+            30% {opacity:1;transform:translateX(0px)}
+            70% {opacity:1;}
+            100% {opacity: 0;}
+        }
+
+        @-webkit-keyframes motion_txt
+        {
+            0% {opacity: 0;}
+            20%{ opacity: 1; }
+            70% { opacity: 1; }
+            100% {opacity: 0;}
+        }
+        @-moz-keyframes motion_txt
+        {
+            0% {opacity: 0;}
+            20%{ opacity: 1; }
+            70% { opacity: 1; }
+            100% {opacity: 0;}
+        }
+        @keyframes motion_txt
+        {
+            0% {opacity: 0;}
+            20%{ opacity: 1; }
+            70% { opacity: 1; }
+            100% {opacity: 0;}
+        }
+        @-webkit-keyframes motion_txt_final
+        {
+            0% {opacity: 0; transform:translateX(-20px)}
+            30% {opacity:100; transform:translateX(0px)}
+            100% {opacity: 100;}
+        }
+        @-moz-keyframes motion_txt_final
+        {
+            0% {opacity: 0; transform:translateX(-20px)}
+            30% {opacity:100; transform:translateX(0px)}
+            100% {opacity: 100;}
+        }
+        @keyframes motion_txt_final
+        {
+            0% {opacity: 0; transform:translateX(-20px)}
+            30% {opacity:100; transform:translateX(0px)}
+            100% {opacity: 100;}
+        }
+		@-webkit-keyframes motion_6
+        {
+            0% {opacity: 0}
+            30% {opacity:100}
+            100% {opacity: 100;}
+        }
+        @-moz-keyframes motion_6
+        {
+            0% {opacity: 0;}
+            10% {opacity:100}
+            100% {opacity: 100;}
+        }
+        @keyframes motion_6
+        {
+            0% {opacity: 0;}
+            10% {opacity:100}
+            100% {opacity: 100;}
+        }
+
+		.bl { border-left: 1px solid #f68b1f;
+            height:0; top: 0; left: 0px; position: absolute;
+            -webkit-animation: bb_move 0.3s;
+            animation: bl_move 0.3s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            -webkit-animation-delay: 10.2s;
+            animation-delay: 10.2s;
+        }
+
+        .bb { border-bottom: 1px solid #f68b1f; height:0;
+            width: 0; top: 279px; left: 0px; position: absolute;
+            -webkit-animation: bb_move 0.3s;
+            animation: bb_move 0.3s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            -webkit-animation-delay: 10.5s;
+            animation-delay: 10.5s;
+        }
+        .br { border-right: 1px solid #f68b1f;
+            height:280px; top: 0px; right: 0px; position: absolute;
+            -webkit-animation: br_move 0.3s;
+            animation: br_move 0.3s;
+            animation-fill-mode: backwards;
+            animation-iteration-count: 1;
+            -webkit-animation-delay: 10.5s;
+            animation-delay: 10.5s;
+        }
+        .bt {border-top: 1px solid #f68b1f; position: absolute; 
+        	width: 336px; top: 0px; left:0px;
+        	-webkit-animation: bb_move 0.3;
+        	animation: bt_move 0.3s;
+            animation-fill-mode: backwards;
+            animation-iteration-count: 1;
+            -webkit-animation-delay: 10.2s;
+            animation-delay: 10.2s; 
+        }
+
+
+        .zTop {z-index: 100;}
+        .logo {position: absolute; right: 10px; top: 10px;}
+        .scene {position: absolute; top: 0; z-index: 10; opacity: 0;transition: all 2s ease-in-out; z-index: 1;}
+        .sc_01 {
+            -webkit-animation: motion_1 4.8s;
+            animation: motion_1 4.8s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            -webkit-animation-delay: .2s;
+            animation-delay: .2s;
+        }
+         .sc_05 {
+         	top:25px; 
+            -webkit-animation: motion_5 4s;
+            animation: motion_5 4s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+        }
+        .sc_txt_1 {
+            top:0px; 
+            right:0px;
+            -webkit-animation: motion_txt 3.8s;
+            animation: motion_txt 3.8s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;
+        }
+       
+        .sc_02 {
+        	top:0px; 
+            -webkit-animation: motion_2 4.5s;
+            animation: motion_2 4.5s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            -webkit-animation-delay: 3.5s;
+            animation-delay: 3.5s;
+        }
+        .sc_txt_2 {
+            top:0px; 
+            right:0px;
+            -webkit-animation: motion_txt 4s;
+            animation: motion_txt 4s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            -webkit-animation-delay: 3.7s;
+            animation-delay: 3.7s;
+        }
+        .sc_03 {
+            -webkit-animation: motion_3 4.5s;
+            animation: motion_3 4.5s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            -webkit-animation-delay: 6.5s;
+            animation-delay: 6.5s;
+        }
+         .sc_txt_3 {
+            top:0px; 
+            right:0px;
+            -webkit-animation: motion_txt 4s;
+            animation: motion_txt 4s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            -webkit-animation-delay: 6.8s;
+            animation-delay: 6.8s;
+        }
+        .sc_04 {
+            -webkit-animation: motion_4 4.5s;
+            animation: motion_4 4.7s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            -webkit-animation-delay: 10s;
+            animation-delay: 10s;
+        }
+        .sc_txt_4 {
+            top:0px; 
+            right:0px;
+            -webkit-animation: motion_txt 4s;
+            animation: motion_txt_final 4s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            -webkit-animation-delay: 10.6s;
+            animation-delay: 10.6s;
+        }
+		.logoFinal {
+			z-index: 101;
+            position: absolute; right: 10px; top: 10px;
+            -webkit-animation: motion_txt .3s;
+            animation: motion_txt_final .3s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            -webkit-animation-delay: 10.3s;
+            animation-delay: 10.3s;
+        }
+
+
+        
+    </style>
+</head>
+
+<body>
+<a href="javascript:window.open(window.clickTag)" style="width: 100%; height: 100%; display: block;">
+    <div class="wrap">
+        <div class="zTop bl"></div>
+        <div class="zTop bb"></div>
+        <div class="zTop bt"></div>
+        <div class="zTop br"></div>
+        <div class="zTop logo"><img src="./images/logo1.png" alt="logo"></div>
+        <div class="scene sc_01 motion_1"><img src="./images/image1.jpg" alt="scene1"></div>
+        <div class="scene sc_05 motion_5"><img src="./images/image5.png" alt="scene5"></div>
+        <div class="scene sc_txt_1 motion_txt"><img src="./images/copy1.png" alt="copy1"></div>
+        <div class="scene sc_02 motion_2"><img src="./images/image2.jpg" alt="scene2"></div>
+        <div class="scene sc_txt_2 motion_txt"><img src="./images/copy2.png" alt="copy2"></div>
+        <div class="scene sc_03 motion_3"><img src="./images/image3.jpg" alt="scene3" width=336 height=280></div>
+        <div class="scene sc_txt_3 motion_txt"><img src="./images/copy3.png" alt="copy3"></div>
+        <div class="scene sc_04 motion_4"><img src="./images/image4.jpg" alt="scene4" width=336 height=280></div>
+        <div class="scene sc_txt_4 motion_txt_final"><img src="./images/copy4.png" alt="copy4"></div>
+        <div class="scene logoFinal motion_6"><img src="./images/logo2.png" alt="logo"></div>
+    </div>
+</a>
+
+<script type="text/javascript" gwd-events="handlers">function getParameterByName(name){name=name.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");var regex=new RegExp("[\\?&]"+name+"=([^&#]*)"),results=regex.exec(location.search);return results===null?"":decodeURIComponent(results[1].replace(/\+/g," "))}var clickTag=getParameterByName("clickTag")
+</script>
+
+</body>
+</html>
